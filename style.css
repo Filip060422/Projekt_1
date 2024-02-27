@@ -58,7 +58,7 @@ section div.left p {
     width: 586px;
     margin-bottom: 50px;
 }
-section div.left input {
+section div.left input, div.second_page input{
     padding: 21px 30px;
     border-radius: 51px;
     background: #E1B9B5 0% 0% no-repeat padding-box;
@@ -79,4 +79,83 @@ div.mouse {
     align-items: center;
     border-radius: 100%;
     
+}
+
+/* CSS do drugiej sekcji */
+div.second_page {
+    margin-top: 100px;
+}
+div.second_page h2 {
+    font-size: 48px;
+    font-weight: bold;
+    color: #543E3C;
+    margin-top: 50px;
+}
+div.second_page div.cards {
+    display: flex;
+    justify-content: space-between;
+}
+div.cards div.card {
+    width: 380px;
+    height: 411px;
+    border: 4px solid #D6C092;
+    background: #FBF9F5 0% 0% no-repeat padding-box;
+    box-shadow: 0px 6px 10px #CCC6B677;
+    border-radius: 4px;
+    opacity: 0.8;
+    position: relative;
+    
+}
+div.cards div.card:first-of-type, div.cards div.card:nth-of-type(2) {
+    margin-right: 87px;
+}
+div.second_page input {
+    margin: auto;
+    margin-top: 50px;
+    display: flex;
+}
+div.second_page p a{
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+}
+div.second_page a {
+    color: #543E3C;
+}
+/* CSS dla kart */
+div.cards div.image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+div.cards div.image:first-of-type {
+    margin-top: 39px;
+}
+div.cards div.image.circle_two {
+    margin-top: 61px;
+}
+div.cards div.image.circle_three {
+    margin-top: 120px;
+}
+div.card div.circle {
+    width: 135px;
+    height: 135px;
+    border-radius: 100%;
+    background-color: #DDC1BC;
+    position: absolute;
+    z-index: -1;
+    left: 89px;
+    top: 120px;
+}
+div.cards div.text {
+    padding: 30px 35px;
+}
+div.cards div.text h3 {
+    color: #2D645A;
+    font: normal normal bold 28px Poppins;
+    margin-bottom: 10px;
+}
+div.cards div.text p {
+    color: #000000;
+    font: normal normal normal 16px Poppins;
 }
