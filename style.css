@@ -7,15 +7,15 @@ body {
     font-family: 'Poppins';
     max-width: 1920px;
     max-height: 2876px;
-    background: #FBF9F5 0% 0% no-repeat padding-box;
 }
 .padding {
     padding-left: 303px;
     padding-right: 286px;
 }
-div.container {
+div.first_page {
     max-width: 1920px;
     height: 1080px;
+    background: #FBF9F5 0% 0% no-repeat padding-box;
 }
 /* CSS nagłówek */
 header {
@@ -67,4 +67,15 @@ section div.left input {
     letter-spacing: 0.21px;
     cursor: pointer;
     color: #543E3C;
+}
+div.mouse {
+    margin: auto;
+    margin-top: 304px;
+    width: 60px;
+    height: 60px;
+    background: #E1B9B5 0% 0% no-repeat padding-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
 }
