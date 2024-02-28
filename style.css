@@ -33,7 +33,7 @@ header img {
     margin-right: 690px;
 }
 header a {
-    font: normal normal medium 18px/35px Poppins;
+    font: normal normal 18px/35px Poppins;
     text-decoration: none;
     color: #000000;
 }
@@ -278,9 +278,6 @@ footer h4 {
 }
 
 /* Modal */
-.container {
-    display: none;
-}
 div.container_modal {
     height: 100vh;
     width: 100%;
@@ -313,7 +310,7 @@ div.modal_content h3 {
     margin-bottom: 19px;
 }
 div.modal_content h4 {
-    font: normal normal medium 20px/26px Poppins;
+    font: normal normal 20px/26px Poppins;
     margin-bottom: 48px;
 }
 div.answers div.answer {
@@ -364,8 +361,10 @@ div.button div.submit {
 }
 div.modal_content div.submit p {
     font: normal normal 18px/27px Poppins;
-    margin-right: 18px;
     color: #543E3C;
+}
+div.modal_content div.submit img {
+    margin-left: 18px;
 }
 div.button div.last_question {
     display: flex;
@@ -380,4 +379,90 @@ div.button div.last_question p {
 }
 div.button div.last_question img {
     height: 13px;
+}
+/* CSS dla wyniku ankiety */
+div.container_modal div.modal_content {
+    height: 726px;
+    /* position: fixed; */
+}
+div.modal_content div.score h3 {
+    font: normal normal normal 28px/42px Poppins;
+    color: #000000;
+}
+div.modal_content div.score h4 {
+    padding: 20px;
+    font: normal normal 38px Poppins;
+    border: 2px solid #E3E3E3;
+    border-radius: 20px;
+    width: 430px;
+}
+div.modal_content div.score h4 span {
+    color: #E1B9B5;
+    font-weight: bold;
+}
+div.modal_content div.score h5 {
+    font: normal normal 20px/26px Poppins;
+    margin-bottom: 21px;
+}
+div.modal_content div.score input {
+    margin-right: 8px;
+    width: 19px;
+    height: 19px;
+}
+div.modal_content div.score label {
+    font: normal normal 14px/21px Poppins;
+}
+div.modal_content div.score p {
+    font: normal normal 14px/21px Poppins;
+    margin-bottom: 23px;
+}
+div.modal_content div.score p a, div.modal_content div.score label a {
+    font: normal normal medium 14px/21px Poppins;
+    color: #E1B9B5;
+}
+div.modal_content div.score p a {
+        margin-left: 10px;
+}
+div.modal_content div.score tr, td {
+    display: flex;
+    align-items: flex-start;
+}
+div.modal_content div.score tr {
+    margin-bottom: 14px;
+}
+div.modal_content div.score div.submit p {
+    margin-bottom: 0;
+    font: normal normal 18px/27px Poppins;
+    color: #543E3C;
+}
+div.modal_content div.score div.images img{
+    position: absolute;
+}
+div.modal_content div.score div.images img:first-of-type {
+    width: 77px;
+    z-index: 2;
+    right: 254px;
+    top: 190px;
+}
+div.modal_content div.score div.images img:nth-of-type(2) {
+    width: 124px;
+    z-index: 3;
+    right: 145px;
+    top: 205px;
+}
+div.modal_content div.score div.images img:last-of-type {
+    width: 206px;
+    right: 50px;
+    top: 262px;
+    z-index: 4;
+}
+div.modal_content div.score div.images div.circle {
+    width: 257px;
+    height: 257px;
+    position: absolute;
+    z-index: 1;
+    background: #DDC1BC 0% 0% no-repeat padding-box;
+    border-radius: 100%;
+    right: 78px;
+    top: 120px;
 }
