@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
+    <div class="container none">
         <div class="first_page">
             <header class="padding">
                 <img src="./media/logo.svg" alt="Logo">
@@ -210,10 +210,48 @@
                         </div>
                         <div class="button">
                             <div class="last_question"><img src="./media/back-icon.svg" alt=""> <p>POPRZEDNIE PYTANIE</p></div>
-                            <div class="submit"><p>ZAKOŃCZ QUIZ</p> <img src="./media/next-icon.svg" alt=""></div>
+                            <div class="submit"><p>ZAKOŃCZ QUIZ</p></div>
                         </div>
                     </div>
-            </div>    
+            </div>  
+            <div class="modal_content ">
+                <div class="score">
+                    <h2>Wiosna nadchodzi - konkurs Mediaflex</h2>
+                    <h3>Dziękujemy za grę!</h3>
+                    <h4>Twój wynik: <span>300/500</span></h4>
+                    <h5>Aby grać o nagrody - zaakceptuj zgody i zapisz swój wynik.</h5>
+                    <div class="images">
+                        <div class="circle"></div>
+                        <img src="./media/prize-one.png" alt="">
+                        <img src="./media/prize-two.png" alt="">
+                        <img src="./media/prize-three.png" alt="">
+                    </div>
+                    <div class="checkbox">
+                        <table>
+                            <tr>
+                                <td><input type="checkbox" name="" id="all"></td>
+                                <td><label for="all">Zaznacz wszystkie zgody</label></td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox" name="" id="rules" required></td>
+                                <td><label for="rules">* Akceptuję <a href="#">regulamin konkursu</a></label></td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox" name="" id="data"></td>
+                                <td><label for="data">Zgoda na przetwarzanie danych osobowych dla celów konkursu</label></td>
+                            </tr>
+                            <tr>
+                                <td><input type="checkbox" name="" id="data_two" required></td>
+                                <td><label for="data_two">* Wyrażam zgodę na przetwarzanie podanych przeze mnie moich danych osobowych w zakresie imię, nazwisko, adres e-mail, numer PWZ, numer telefonu przez Administratora w celu organizacji i realizacji Konkursu.</label></td>
+                            </tr>
+                        </table>
+                        <p>Klauzula informacyjna RODO <a href="#">czytaj więcej</a></p>
+                        <p>* Pola obowiązkowe są oznaczone gwiazdką</p>
+                        <div class="button">
+                            <div class="submit"><p>ZAKOŃCZ QUIZ</p></div>
+                        </div>
+                    </div>
+            </div>  
         </form>
     </div>
 </body>
