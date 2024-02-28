@@ -24,7 +24,7 @@ header {
     height: 110px;
     border-bottom: 1px solid #DDC1BC;
 }
-header h1 {
+header img {
     margin-right: 690px;
 }
 header a {
@@ -130,8 +130,9 @@ div.cards div.image {
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
-div.cards div.image:first-of-type {
+div.card:first-of-type div.image {
     margin-top: 39px;
 }
 div.cards div.image.circle_two {
@@ -147,8 +148,8 @@ div.card div.circle {
     background-color: #DDC1BC;
     position: absolute;
     z-index: -1;
-    left: 89px;
-    top: 120px;
+    left: 67px;
+    bottom: 4px;
 }
 div.cards div.text {
     padding: 30px 35px;
@@ -184,14 +185,42 @@ div.third_page div.boxes {
     justify-content: space-between;
 }
 div.boxes div.box {
-    width: 417px;
+    width: 400px;
     height: 285px;
     background: #FBF9F5 0% 0% no-repeat padding-box;
     box-shadow: 0px 6px 10px #CCC6B677;
-    border: 4px solid #D6C092;
+    border-top: 4px solid #D6C092;
+    border-bottom: 4px solid #D6C092;
+    border-left: 4px solid #D6C092;
     opacity: 0.8;
     position: relative;
 }
+div.boxes div.box::before {
+    content: '';
+    position: absolute;
+    top: -4px;
+    right: -36px;
+    width: 0;
+    height: 0;
+    background: #FBF9F5 0% 0% no-repeat padding-box;
+    border-top: 142px solid transparent;
+    border-left: 40px solid #FBF9F5;
+    border-bottom: 143px solid transparent;
+}
+div.boxes div.box::after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    top: -4px;
+    right: -40px;
+    width: 0;
+    height: 0;
+    background: #FBF9F5 0% 0% no-repeat padding-box;
+    border-top: 142px solid transparent;
+    border-left: 40px solid #D6C092;
+    border-bottom: 143px solid transparent;
+}
+
 /* div.boxes div.box:first-of-type, div.boxes div.box:nth-of-type(2) {
     margin-right: 50px;
 } */
@@ -228,4 +257,17 @@ div.box div.text h3 {
 }
 div.box:nth-of-type(2) div.text h3 {
     max-width: 309px;
+}
+/* CSS dla stopki */
+footer {
+    height: 155px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer img {
+    margin-right: 8px;
+}
+footer h4 {
+    font: normal normal normal 16px Poppins;
 }
