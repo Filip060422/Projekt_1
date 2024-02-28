@@ -381,9 +381,8 @@ div.button div.last_question img {
     height: 13px;
 }
 /* CSS dla wyniku ankiety */
-div.container_modal div.modal_content {
+div.container_modal div.modal_content:nth-of-type(4) {
     height: 726px;
-    /* position: fixed; */
 }
 div.modal_content div.score h3 {
     font: normal normal normal 28px/42px Poppins;
@@ -465,4 +464,46 @@ div.modal_content div.score div.images div.circle {
     border-radius: 100%;
     right: 78px;
     top: 120px;
+}
+/* CSS dla nakiety NPS */
+div.container_modal div.modal_content:nth-of-type(5) {
+    height: 610px;
+}
+div.survey_nps div.nps_header {
+    width: 1008px;
+    height: 116px;
+    background: #DDC1BC 0% 0% no-repeat padding-box;
+    display: flex;
+    align-items: center;
+    padding: 0 44px;
+    margin-bottom: 88px;
+}
+div.survey_nps div.nps_header img {
+    width: 160px;
+}
+div.survey_nps div.nps_header h2 {
+    margin-left: 220px;
+    font: normal normal 600 26px/36px Poppins;
+    color: #543E3C;
+    margin-bottom: 0;
+}
+div.survey_nps div.rest {
+    text-align: center;
+}
+div.survey_nps div.rest h3 {
+    font: normal normal normal 28px/42px Poppins;
+    margin-top: 31px;
+    color: #070707;
+}
+div.survey_nps div.rest input {
+    padding: 17px 28px;
+    border-radius: 51px;
+    background: #E1B9B5 0% 0% no-repeat padding-box;
+    border: none;
+    font: normal normal 18px/27px Poppins;
+    letter-spacing: 0.21px;
+    cursor: pointer;
+    color: #543E3C;
+    text-transform: uppercase;
+    box-shadow: 0px 3px 6px #00000029;
 }
