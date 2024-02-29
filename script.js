@@ -63,6 +63,7 @@ inputs_three.forEach(input => {
 });
 
 button_one.addEventListener('click', () => {
+    let alert_text = document.querySelector('.alert_one');
     inputs_one.forEach(input => {
         if(input.classList.contains('border')) {
             let temp = 0;
@@ -78,14 +79,11 @@ button_one.addEventListener('click', () => {
         } 
     });
     if(!inputs_one[0].classList.contains('border') && !inputs_one[1].classList.contains('border') && !inputs_one[2].classList.contains('border')) {
-        alert("Prosimy o zaznaczenie odpowiedzi!");
+        alert_text.classList.remove('hidden');
     } 
-    if(inputs_one[2].classList.contains('border')) {
-        points++;
-    }
-     console.log(points);
 })
 button_two.addEventListener('click', () => {
+    let alert_text = document.querySelector('.alert_two');
     inputs_two.forEach(input => {
         if(input.classList.contains('border')) {
             let temp = 0;
@@ -100,13 +98,11 @@ button_two.addEventListener('click', () => {
         }
     });
     if(!inputs_two[0].classList.contains('border') && !inputs_two[1].classList.contains('border') && !inputs_two[2].classList.contains('border')) {
-        alert("Prosimy o zaznaczenie odpowiedzi!");
-    }
-    if(inputs_two[1].classList.contains('border')) {
-        points++;
+        alert_text.classList.remove('hidden');
     }
 })
 button_three.addEventListener('click', () => {
+    let alert_text = document.querySelector('.alert_three');
     inputs_three.forEach(input => {
         if(input.classList.contains('border')) {
             let temp = 0;
@@ -121,12 +117,17 @@ button_three.addEventListener('click', () => {
         }
     });
     if(!inputs_three[0].classList.contains('border') && !inputs_three[1].classList.contains('border') && !inputs_three[2].classList.contains('border')) {
-        alert("Prosimy o zaznaczenie odpowiedzi!");
+        alert_text.classList.remove('hidden');
     } 
+    if(inputs_one[2].classList.contains('border')) {
+        points++;
+    }
+    if(inputs_two[1].classList.contains('border')) {
+        points++;
+    }
     if(inputs_three[0].classList.contains('border')) {
         points++;
     }
-    console.log(points);
     span.innerText = `${points}/3`;
 })
 

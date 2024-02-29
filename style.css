@@ -347,6 +347,7 @@ div.answer input {
 div.modal_content div.button {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 div.modal_content:first-of-type div.button {
     justify-content: flex-end;
@@ -372,6 +373,12 @@ div.button div.submit, div.button button {
     border-radius: 40px;
     border: none;
     cursor: pointer;
+    
+}
+div.div {
+    display: flex;
+    justify-content: flex-end;
+    width: 33%;
 }
 div.modal_content div.submit p {
     font: normal normal 600 18px/27px Poppins;
@@ -383,7 +390,7 @@ div.modal_content div.submit img {
 div.button div.last_question {
     display: flex;
     align-items: center;
-    width: 300px;
+    width: 33%;
     cursor: pointer;
 }
 div.button div.last_question p {
@@ -624,5 +631,19 @@ div.survey_nps div.rest_line div.input_nps_submit {
     border: 3px solid #E1B9B5;
 }
 .alert {
-    display: none;
+    color: red;
+}
+div.first_question div.bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+div.first_question div.bottom div.button{
+    width: 33%;
+}
+div.bottom div.last_question {
+    width: 33%;
+}
+.hidden {
+    visibility: hidden;
 }
