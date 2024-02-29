@@ -199,6 +199,7 @@ div.boxes div.box {
     border-left: 4px solid #D6C092;
     opacity: 0.8;
     position: relative;
+    z-index: 3;
 }
 div.boxes div.box::before {
     content: '';
@@ -211,6 +212,7 @@ div.boxes div.box::before {
     border-top: 142px solid transparent;
     border-left: 40px solid #FBF9F5;
     border-bottom: 143px solid transparent;
+    z-index: 2;
 }
 div.boxes div.box::after {
     z-index: -1;
@@ -224,6 +226,7 @@ div.boxes div.box::after {
     border-top: 142px solid transparent;
     border-left: 40px solid #D6C092;
     border-bottom: 143px solid transparent;
+    z-index: 1;
 }
 
 /* div.boxes div.box:first-of-type, div.boxes div.box:nth-of-type(2) {
@@ -360,7 +363,7 @@ div.button div.submit {
     cursor: pointer;
 }
 div.modal_content div.submit p {
-    font: normal normal 18px/27px Poppins;
+    font: normal normal 600 18px/27px Poppins;
     color: #543E3C;
 }
 div.modal_content div.submit img {
@@ -416,7 +419,7 @@ div.modal_content div.score p {
     margin-bottom: 23px;
 }
 div.modal_content div.score p a, div.modal_content div.score label a {
-    font: normal normal medium 14px/21px Poppins;
+    font: normal normal 14px/21px Poppins;
     color: #E1B9B5;
 }
 div.modal_content div.score p a {
@@ -431,7 +434,7 @@ div.modal_content div.score tr {
 }
 div.modal_content div.score div.submit p {
     margin-bottom: 0;
-    font: normal normal 18px/27px Poppins;
+    font: normal normal 600 18px/27px Poppins;
     color: #543E3C;
 }
 div.modal_content div.score div.images img{
@@ -500,10 +503,106 @@ div.survey_nps div.rest input {
     border-radius: 51px;
     background: #E1B9B5 0% 0% no-repeat padding-box;
     border: none;
-    font: normal normal 18px/27px Poppins;
+    font: normal normal 600 18px/27px Poppins;
     letter-spacing: 0.21px;
     cursor: pointer;
     color: #543E3C;
     text-transform: uppercase;
     box-shadow: 0px 3px 6px #00000029;
+}
+/* CSS dla ankiety NPS (ocena) */
+div.container_modal div.modal_content.sixth_nps {
+    height: 736px;
+}
+div.survey_nps:last-of-type div.nps_header {
+    margin-bottom: 38px;
+}
+div.survey_nps div.line_nps {
+    display: flex;
+    margin-bottom: 40px;
+    align-items: center;
+}
+div.survey_nps div.line_nps p {
+    font: normal normal 14px/22px Poppins;
+    color: #DDC1BC;
+}
+div.survey_nps div.line_nps div.line {
+    width: 847px;
+    height: 16px;
+    background-color: #DDC1BC;
+    border-radius: 17px;
+    margin: 0 15px;
+}
+div.survey_nps div.rest_line, div.survey_nps div.line_nps {
+    padding-left: 41px;
+}
+div.survey_nps h3 {
+    font: normal normal normal 21px/36px Poppins;
+    color: #070707;
+    background-color: #F6F6F6;
+    padding: 5px 0 8px 41px;
+    margin-bottom: 23px;
+}
+div.survey_nps div.rest_line h4 {
+    font: normal normal 600 21px/32px Poppins;
+    color: #070707;
+    margin-bottom: 40px;
+}
+div.survey_nps div.rest_line p {
+    font: normal normal 300 12px/18px Poppins;
+    color: #070707;
+    margin-bottom: 13px;
+}
+div.survey_nps div.rest_line p span {
+    margin-right: 6px;
+}
+div.survey_nps div.rest_line div.nps_boxes {
+    display: flex;
+    margin-bottom: 30px;
+}
+div.survey_nps div.rest_line div.nps_boxes div.nps_box {
+    width: 54px;
+    height: 54px;
+    border: 2px solid #DDC1BC;
+    border-radius: 8px;
+    margin-right: 11px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font: normal normal bold 20px/30px Poppins;
+    color: #543E3C;
+    cursor: pointer;
+}
+div.survey_nps div.rest_line h5 {
+    font: normal normal 600 16px/25px Poppins;
+    color: #070707;
+    margin-bottom: 15px;
+}
+div.survey_nps div.rest_line input[type="text"] {
+    width: 967px;
+    height: 70px;
+    padding: 15px 0 35px 10px;
+    border: 1px solid #E6E2E2;
+    border-radius: 10px;
+    font: normal normal normal 14px/21px Poppins;
+    margin-bottom: 30px;
+}
+div.survey_nps div.rest_line input[type="text"]::placeholder {
+    color: #D5D5D5;
+}
+div.survey_nps div.rest_line input[type="submit"] {
+    padding: 18px 28px;
+    border-radius: 40px;
+    background: #E1B9B5 0% 0% no-repeat padding-box;
+    border: none;
+    font: normal normal 600 18px/27px Poppins;
+    letter-spacing: 0.21px;
+    cursor: pointer;
+    color: #543E3C;
+    text-transform: uppercase;
+    box-shadow: 0px 3px 6px #00000029;
+}
+div.survey_nps div.rest_line div.input_nps_submit {
+    display: flex;
+    justify-content: flex-end;
 }
