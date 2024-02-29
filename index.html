@@ -7,12 +7,12 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container none">
+    <div class="container">
         <div class="first_page">
             <header class="padding">
                 <img src="./media/logo.svg" alt="Logo">
-                <a href="#">Co możesz wygrać</a>
-                <a href="#">Co zrobić aby wygrać</a>
+                <a href="#awards">Co możesz wygrać</a>
+                <a href="#steps">Co zrobić aby wygrać</a>
             </header>
             <div class="main_area">
                 <section class="banner padding">
@@ -20,7 +20,7 @@
                         <h2>Wiosna nadchodzi - zgarnij wiosenne gadżety od Mediaflex!</h2>
                         <div class="line"></div>
                         <p>Do wiosny jeden krok... weź udział w konkursie i wygraj gadżety, które z pewnością umilą coraz cieplejsze wiosenne popołudnia.</p>
-                        <input type="button" value="Biorę udział">
+                        <input type="button" value="Biorę udział" class="to_survey">
                     </div>
                     <div class="right">
                         <img src="./media/flowers.svg" alt="flowers">
@@ -33,7 +33,7 @@
         </div>
 
         <div class="second_page padding">
-            <h2>Co możesz wygrać?</h2>
+            <h2 id="awards">Co możesz wygrać?</h2>
             <div class="cards">
                 <div class="card">
                     <div class="image">
@@ -66,11 +66,11 @@
                     </div>
                 </div>
             </div>
-            <input type="button" value="Biorę udział">
+            <input type="button" value="Biorę udział" class="to_survey">
             <p><a href="#">Regulamin konkursu</a></p>
         </div>
         <div class="third_page padding">
-            <h2>Do nagrody dzielą Cię 3 kroki!</h2>
+            <h2 id="steps">Do nagrody dzielą Cię 3 kroki!</h2>
 
             <div class="boxes">
                 <div class="box">
@@ -104,19 +104,19 @@
                     </div>
                 </div>
             </div>
-            <input type="button" value="Biorę udział">
+            <input type="button" value="Biorę udział" class="to_survey">
         </div>
         <footer>
             <img src="./media/footer-icon.png" alt="Ikona stopki">
             <h4>2024 MediaEdu | Mediaflex</h4>
         </footer>
     </div>
-    <div class="container_modal padding ">
+    <div class="container_modal padding none">
         <div class="logo">
             <img src="./media/logo.svg" alt="Logo">
         </div>
         <form action="" method="post">
-            <div class="modal_content none">
+            <div class="modal_content ">
                 <div class="first_question">
                     <h2>Wiosna nadchodzi - konkurs Mediaflex</h2>
                     <h3>Pytanie 1/3</h3>
@@ -124,27 +124,23 @@
                     
                         <div class="answers">
                             <div class="answer">
-                                <img src="./media/flower-icon.svg" alt="Ikona kwiatka">
+                                <img src="./media/flower-icon.svg" alt="Ikona kwiatka" class="image_answer">
                                 <p>A</p>
-                                <input type="button" value="2007">
+                                <input type="button" value="2007" class="input_answer_one border_two">
                             </div>
                             <div class="answer">
-                                <div class="answer">
-                                    <img src="./media/flower-icon.svg" alt="Ikona kwiatka">
-                                    <p>B</p>
-                                    <input type="button" value="2008">
-                                </div>
+                                <img src="./media/flower-icon.svg" alt="Ikona kwiatka" class="image_answer">
+                                <p>B</p>
+                                <input type="button" value="2008" class="input_answer_one border_two">
                             </div>
                             <div class="answer">
-                                <div class="answer">
-                                    <img src="./media/flower-icon.svg" alt="Ikona kwiatka">
-                                    <p>C</p>
-                                    <input type="button" value="2009">
-                                </div>
+                                <img src="./media/flower-icon.svg" alt="Ikona kwiatka" class="image_answer">
+                                <p>C</p>
+                                <input type="button" value="2009" class="input_answer_one border_two">
                             </div>
                         </div>
                         <div class="button">
-                            <div class="submit"><p>NASTĘPNE PYTANIE</p> <img src="./media/next-icon.svg" alt=""></div>
+                            <div class="submit submit_one"><p>NASTĘPNE PYTANIE</p> <img src="./media/next-icon.svg" alt=""></div>
                         </div>
                     </div>
             </div>
@@ -156,28 +152,28 @@
                     
                         <div class="answers">
                             <div class="answer">
-                                <img src="./media/flower-icon.svg" alt="Ikona kwiatka">
+                                <img src="./media/flower-icon.svg" alt="Ikona kwiatka" class="image_answer">
                                 <p>A</p>
-                                <input type="button" value="Jakość">
+                                <input type="button" value="Jakość" class="input_answer_two border_two">
                             </div>
                             <div class="answer">
                                 <div class="answer">
-                                    <img src="./media/flower-icon.svg" alt="Ikona kwiatka">
+                                    <img src="./media/flower-icon.svg" alt="Ikona kwiatka" class="image_answer">
                                     <p>B</p>
-                                    <input type="button" value="Rozsądek">
+                                    <input type="button" value="Rozsądek" class="input_answer_two border_two">
                                 </div>
                             </div>
                             <div class="answer">
                                 <div class="answer">
-                                    <img src="./media/flower-icon.svg" alt="Ikona kwiatka">
+                                    <img src="./media/flower-icon.svg" alt="Ikona kwiatka" class="image_answer">
                                     <p>C</p>
-                                    <input type="button" value="Komunikacja">
+                                    <input type="button" value="Komunikacja" class="input_answer_two border_two">
                                 </div>
                             </div>
                         </div>
                         <div class="button">
                             <div class="last_question"><img src="./media/back-icon.svg" alt=""> <p>POPRZEDNIE PYTANIE</p></div>
-                            <div class="submit"><p>NASTĘPNE PYTANIE</p> <img src="./media/next-icon.svg" alt=""></div>
+                            <div class="submit submit_two"><p>NASTĘPNE PYTANIE</p> <img src="./media/next-icon.svg" alt=""></div>
                         </div>
                     </div>
             </div>
@@ -189,28 +185,28 @@
                     
                         <div class="answers">
                             <div class="answer">
-                                <img src="./media/flower-icon.svg" alt="Ikona kwiatka">
+                                <img src="./media/flower-icon.svg" alt="Ikona kwiatka" class="image_answer">
                                 <p>A</p>
-                                <input type="button" value="Krakowie">
+                                <input type="button" value="Krakowie" class="input_answer_three border_two">
                             </div>
                             <div class="answer">
                                 <div class="answer">
-                                    <img src="./media/flower-icon.svg" alt="Ikona kwiatka">
+                                    <img src="./media/flower-icon.svg" alt="Ikona kwiatka" class="image_answer">
                                     <p>B</p>
-                                    <input type="button" value="Szczecinie">
+                                    <input type="button" value="Szczecinie" class="input_answer_three border_two">
                                 </div>
                             </div>
                             <div class="answer">
                                 <div class="answer">
-                                    <img src="./media/flower-icon.svg" alt="Ikona kwiatka">
+                                    <img src="./media/flower-icon.svg" alt="Ikona kwiatka" class="image_answer">
                                     <p>C</p>
-                                    <input type="button" value="Rzeszowie">
+                                    <input type="button" value="Rzeszowie" class="input_answer_three border_two">
                                 </div>
                             </div>
                         </div>
                         <div class="button">
                             <div class="last_question"><img src="./media/back-icon.svg" alt=""> <p>POPRZEDNIE PYTANIE</p></div>
-                            <div class="submit"><p>ZAKOŃCZ QUIZ</p></div>
+                            <div class="submit submit_three"><p>ZAKOŃCZ QUIZ</p></div>
                         </div>
                     </div>
             </div>  
@@ -218,7 +214,7 @@
                 <div class="score">
                     <h2>Wiosna nadchodzi - konkurs Mediaflex</h2>
                     <h3>Dziękujemy za grę!</h3>
-                    <h4>Twój wynik: <span>300/500</span></h4>
+                    <h4>Twój wynik: <span class="final_result">1/3</span></h4>
                     <h5>Aby grać o nagrody - zaakceptuj zgody i zapisz swój wynik.</h5>
                     <div class="images">
                         <div class="circle"></div>
@@ -229,31 +225,32 @@
                     <div class="checkbox">
                         <table>
                             <tr>
-                                <td><input type="checkbox" name="" id="all"></td>
+                                <td><input type="checkbox" name="" id="all" class="check_all"></td>
                                 <td><label for="all">Zaznacz wszystkie zgody</label></td>
                             </tr>
                             <tr>
-                                <td><input type="checkbox" name="" id="rules" required></td>
+                                <td><input type="checkbox" name="" id="rules" required class="check"></td>
                                 <td><label for="rules">* Akceptuję <a href="#">regulamin konkursu</a></label></td>
                             </tr>
                             <tr>
-                                <td><input type="checkbox" name="" id="data"></td>
+                                <td><input type="checkbox" name="" id="data" class="check"></td>
                                 <td><label for="data">Zgoda na przetwarzanie danych osobowych dla celów konkursu</label></td>
                             </tr>
                             <tr>
-                                <td><input type="checkbox" name="" id="data_two" required></td>
+                                <td><input type="checkbox" name="" id="data_two" required class="check"></td>
                                 <td><label for="data_two">* Wyrażam zgodę na przetwarzanie podanych przeze mnie moich danych osobowych w zakresie imię, nazwisko, adres e-mail, numer PWZ, numer telefonu przez Administratora w celu organizacji i realizacji Konkursu.</label></td>
                             </tr>
                         </table>
                         <p>Klauzula informacyjna RODO <a href="#">czytaj więcej</a></p>
                         <p>* Pola obowiązkowe są oznaczone gwiazdką</p>
                         <div class="button">
-                            <div class="submit"><p>ZAKOŃCZ QUIZ</p></div>
+                            <button type="submit">ZAKOŃCZ QUIZ</button>
                         </div>
                     </div>
                 </div>
         </div>  
         </form>
+        <!-- Ankieta NPS -->
         <div class="modal_content none">
             <div class="survey_nps">
                 <div class="nps_header">
@@ -267,7 +264,7 @@
                 </div>
             </div>
         </div>
-        <div class="modal_content sixth_nps">
+        <div class="modal_content sixth_nps none">
             <form action="" method="post">
                 <div class="survey_nps">
                     <div class="nps_header">
@@ -305,6 +302,8 @@
                 </div>
             </form>
         </div>
+
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
