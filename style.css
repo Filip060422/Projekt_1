@@ -335,7 +335,6 @@ div.answer p {
     margin: 0 56px 0 26px;
 }
 div.answer input {
-    border: 2px solid #EAEAEA;
     width: 909px;
     height: 60px;
     background-color: #FFFFFF;
@@ -352,7 +351,19 @@ div.modal_content div.button {
 div.modal_content:first-of-type div.button {
     justify-content: flex-end;
 }
-div.button div.submit {
+div.button button {
+    padding: 18px 32px;
+    display: flex;
+    align-items: center;
+    background-color: #E1B9B5;
+    box-shadow: 0px 3px 6px #00000029;
+    border-radius: 40px;
+    border: none;
+    cursor: pointer;
+    font: normal normal 600 18px/27px Poppins;
+    color: #543E3C;
+}
+div.button div.submit, div.button button {
     padding: 18px 32px;
     display: flex;
     align-items: center;
@@ -396,7 +407,7 @@ div.modal_content div.score h4 {
     font: normal normal 38px Poppins;
     border: 2px solid #E3E3E3;
     border-radius: 20px;
-    width: 430px;
+    width: 330px;
 }
 div.modal_content div.score h4 span {
     color: #E1B9B5;
@@ -605,4 +616,13 @@ div.survey_nps div.rest_line input[type="submit"] {
 div.survey_nps div.rest_line div.input_nps_submit {
     display: flex;
     justify-content: flex-end;
+}
+.border_two {
+    border: 2px solid #EAEAEA;
+}
+.border {
+    border: 3px solid #E1B9B5;
+}
+.alert {
+    display: none;
 }
