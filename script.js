@@ -80,7 +80,9 @@ button_one.addEventListener('click', () => {
     });
     if(!inputs_one[0].classList.contains('border') && !inputs_one[1].classList.contains('border') && !inputs_one[2].classList.contains('border')) {
         alert_text.classList.remove('hidden');
-    } 
+    } else {
+        alert_text.classList.add('hidden');
+    }
 })
 button_two.addEventListener('click', () => {
     let alert_text = document.querySelector('.alert_two');
@@ -99,6 +101,8 @@ button_two.addEventListener('click', () => {
     });
     if(!inputs_two[0].classList.contains('border') && !inputs_two[1].classList.contains('border') && !inputs_two[2].classList.contains('border')) {
         alert_text.classList.remove('hidden');
+    } else {
+        alert_text.classList.add('hidden');
     }
 })
 button_three.addEventListener('click', () => {
@@ -118,17 +122,20 @@ button_three.addEventListener('click', () => {
     });
     if(!inputs_three[0].classList.contains('border') && !inputs_three[1].classList.contains('border') && !inputs_three[2].classList.contains('border')) {
         alert_text.classList.remove('hidden');
-    } 
-    if(inputs_one[2].classList.contains('border')) {
-        points++;
+    } else {
+        alert_text.classList.add('hidden');
+
+        if(inputs_one[2].classList.contains('border')) {
+            points++;
+        }
+        if(inputs_two[1].classList.contains('border')) {
+            points++;
+        }
+        if(inputs_three[0].classList.contains('border')) {
+            points++;
+        }
+        span.innerText = `${points}/3`;
     }
-    if(inputs_two[1].classList.contains('border')) {
-        points++;
-    }
-    if(inputs_three[0].classList.contains('border')) {
-        points++;
-    }
-    span.innerText = `${points}/3`;
 })
 
 back_buttons.forEach(button => {
