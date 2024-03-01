@@ -1,20 +1,20 @@
-let survey_buttons = document.querySelectorAll('.to_survey');
-let inputs_one = document.querySelectorAll('.input_answer_one');
-let inputs_two = document.querySelectorAll('.input_answer_two');
-let inputs_three = document.querySelectorAll('.input_answer_three');
-let images = document.querySelectorAll('.image_answer');
-let button_one = document.querySelector('.submit_one');
-let button_two = document.querySelector('.submit_two');
-let button_three = document.querySelector('.submit_three');
-let back_buttons = document.querySelectorAll('.last_question');
-let span = document.querySelector('.final_result');
+let survey_buttons = document.querySelectorAll('.to-survey');
+let inputs_one = document.querySelectorAll('.input-answer-one');
+let inputs_two = document.querySelectorAll('.input-answer-two');
+let inputs_three = document.querySelectorAll('.input-answer-three');
+let images = document.querySelectorAll('.image-answer');
+let button_one = document.querySelector('.submit-one');
+let button_two = document.querySelector('.submit-two');
+let button_three = document.querySelector('.submit-three');
+let back_buttons = document.querySelectorAll('.last-question');
+let span = document.querySelector('.final-result');
 
 let points = 0;
 
 survey_buttons.forEach(button => {
     button.addEventListener('click', () => {
         let container = document.querySelector('.container');
-        let container_modal = document.querySelector('.container_modal');
+        let container_modal = document.querySelector('.container-modal');
         container.classList.add('none');
         container_modal.classList.remove('none');
     })
@@ -63,11 +63,11 @@ inputs_three.forEach(input => {
 });
 
 button_one.addEventListener('click', () => {
-    let alert_text = document.querySelector('.alert_one');
+    let alert_text = document.querySelector('.alert-one');
     inputs_one.forEach(input => {
         if(input.classList.contains('border')) {
             let temp = 0;
-            let modals = document.querySelectorAll('.modal_content');
+            let modals = document.querySelectorAll('.modal-content');
             for(let i = 0; i < modals.length; i++) {
                 if(!modals[i].classList.contains('none') && temp === 0) {
                     modals[i].classList.add('none')
@@ -85,11 +85,11 @@ button_one.addEventListener('click', () => {
     }
 })
 button_two.addEventListener('click', () => {
-    let alert_text = document.querySelector('.alert_two');
+    let alert_text = document.querySelector('.alert-two');
     inputs_two.forEach(input => {
         if(input.classList.contains('border')) {
             let temp = 0;
-            let modals = document.querySelectorAll('.modal_content');
+            let modals = document.querySelectorAll('.modal-content');
             for(let i = 0; i < modals.length; i++) {
                 if(!modals[i].classList.contains('none') && temp === 0) {
                     modals[i].classList.add('none')
@@ -106,11 +106,11 @@ button_two.addEventListener('click', () => {
     }
 })
 button_three.addEventListener('click', () => {
-    let alert_text = document.querySelector('.alert_three');
+    let alert_text = document.querySelector('.alert-three');
     inputs_three.forEach(input => {
         if(input.classList.contains('border')) {
             let temp = 0;
-            let modals = document.querySelectorAll('.modal_content');
+            let modals = document.querySelectorAll('.modal-content');
             for(let i = 0; i < modals.length; i++) {
                 if(!modals[i].classList.contains('none') && temp === 0) {
                     modals[i].classList.add('none')
@@ -141,7 +141,7 @@ button_three.addEventListener('click', () => {
 back_buttons.forEach(button => {
     button.addEventListener('click', () => {
         let temp = 0;
-        let modals = document.querySelectorAll('.modal_content');
+        let modals = document.querySelectorAll('.modal-content');
         for(let i = 0; i < modals.length; i++) {
             if(!modals[i].classList.contains('none') && temp === 0) {
                 modals[i].classList.add('none')
@@ -152,7 +152,7 @@ back_buttons.forEach(button => {
     })
 });
 
-let check_all = document.querySelector('.check_all');
+let check_all = document.querySelector('.check-all');
 let checks = document.querySelectorAll('.check');
 
 check_all.addEventListener('click', () => {

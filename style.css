@@ -17,7 +17,7 @@ body {
     padding-left: 303px;
     padding-right: 286px;
 }
-div.first_page {
+div.first-page {
     max-width: 1920px;
     height: 1080px;
     background: #FBF9F5 0% 0% no-repeat padding-box;
@@ -63,7 +63,7 @@ section div.left p {
     width: 586px;
     margin-bottom: 50px;
 }
-section div.left input, div.second_page input, div.third_page input{
+section div.left input, div.second-page input, div.third-page input{
     padding: 21px 30px;
     border-radius: 51px;
     background: #E1B9B5 0% 0% no-repeat padding-box;
@@ -88,17 +88,17 @@ div.mouse {
 }
 
 /* CSS do drugiej sekcji */
-div.second_page {
+div.second-page {
     margin-top: 100px;
     height: 918px;
 }
-div.second_page h2 {
+div.second-page h2 {
     font-size: 48px;
     font-weight: bold;
     color: #543E3C;
     margin: 50px 0;
 }
-div.second_page div.cards {
+div.second-page div.cards {
     display: flex;
     justify-content: space-between;
 }
@@ -116,17 +116,17 @@ div.cards div.card {
 div.cards div.card:first-of-type, div.cards div.card:nth-of-type(2) {
     margin-right: 87px;
 }
-div.second_page input, div.third_page input {
+div.second-page input, div.third-page input {
     margin: auto;
     margin-top: 50px;
     display: flex;
 }
-div.second_page p a{
+div.second-page p a{
     margin-top: 40px;
     display: flex;
     justify-content: center;
 }
-div.second_page a {
+div.second-page a {
     color: #543E3C;
     margin-bottom: 100px;
 }
@@ -140,10 +140,10 @@ div.cards div.image {
 div.card:first-of-type div.image {
     margin-top: 39px;
 }
-div.cards div.image.circle_two {
+div.cards div.image.circle-two {
     margin-top: 61px;
 }
-div.cards div.image.circle_three {
+div.cards div.image.circle-three {
     margin-top: 120px;
 }
 div.card div.circle {
@@ -168,24 +168,24 @@ div.cards div.text p {
     color: #000000;
     font: normal normal normal 16px Poppins;
 }
-div.cards div.text_two {
+div.cards div.text-two {
     padding-top: 24px;
 }
 
 /* CSS do trzeciej sekcji */
-div.third_page {
+div.third-page {
     height: 723px;
     background: #FBF9F5 0% 0% no-repeat padding-box;
     padding-top: 100px;
     padding-bottom: 100px;
 }
-div.third_page h2 {
+div.third-page h2 {
     margin-bottom: 50px;
     font: normal normal bold 48px/83px Poppins;
     text-transform: capitalize;
     color: #543E3C;
 }
-div.third_page div.boxes {
+div.third-page div.boxes {
     display: flex;
     justify-content: space-between;
 }
@@ -281,17 +281,17 @@ footer h4 {
 }
 
 /* Modal */
-div.container_modal {
+div.container-modal {
     height: 100vh;
     width: 100%;
     padding-top: 40px;
     background-color: rgba(0,0,0,0.4);
     position: relative;
 }
-/* div.container_modal div.logo {
+/* div.container-modal div.logo {
     
 } */
-div.container_modal div.modal_content {
+div.container-modal div.modal-content {
     width: 1088px;
     height: 600px;
     background-color: #FFFFFF;
@@ -302,17 +302,17 @@ div.container_modal div.modal_content {
     left: 416px;
     padding: 40px 40px 40px 35px;
 }
-div.modal_content h2 {
+div.modal-content h2 {
     color: #2D635A;
     font: normal normal normal 38px/51px Abril Fatface;
     margin-bottom: 13px;
 }
-div.modal_content h3 {
+div.modal-content h3 {
     color: #E1B9B5;
     font: normal normal 600 21px/28px Poppins;
     margin-bottom: 19px;
 }
-div.modal_content h4 {
+div.modal-content h4 {
     font: normal normal 20px/26px Poppins;
     margin-bottom: 48px;
 }
@@ -344,12 +344,12 @@ div.answer input {
     font: 18px Poppins;
     cursor: pointer;
 }
-div.modal_content div.button {
+div.modal-content div.button {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-div.modal_content:first-of-type div.button {
+div.modal-content:first-of-type div.button {
     justify-content: flex-end;
 }
 div.button button {
@@ -380,103 +380,103 @@ div.div {
     justify-content: flex-end;
     width: 33%;
 }
-div.modal_content div.submit p {
+div.modal-content div.submit p {
     font: normal normal 600 18px/27px Poppins;
     color: #543E3C;
 }
-div.modal_content div.submit img {
+div.modal-content div.submit img {
     margin-left: 18px;
 }
-div.button div.last_question {
+div.button div.last-question {
     display: flex;
     align-items: center;
     width: 33%;
     cursor: pointer;
 }
-div.button div.last_question p {
+div.button div.last-question p {
     margin-left: 18px;
     color: #E1B9B5;
     font: normal normal 16px Roboto;
 }
-div.button div.last_question img {
+div.button div.last-question img {
     height: 13px;
 }
 /* CSS dla wyniku ankiety */
-div.container_modal div.modal_content:nth-of-type(4) {
+div.container-modal div.modal-content:nth-of-type(4) {
     height: 726px;
 }
-div.modal_content div.score h3 {
+div.modal-content div.score h3 {
     font: normal normal normal 28px/42px Poppins;
     color: #000000;
 }
-div.modal_content div.score h4 {
+div.modal-content div.score h4 {
     padding: 20px;
     font: normal normal 38px Poppins;
     border: 2px solid #E3E3E3;
     border-radius: 20px;
     width: 330px;
 }
-div.modal_content div.score h4 span {
+div.modal-content div.score h4 span {
     color: #E1B9B5;
     font-weight: bold;
 }
-div.modal_content div.score h5 {
+div.modal-content div.score h5 {
     font: normal normal 20px/26px Poppins;
     margin-bottom: 21px;
 }
-div.modal_content div.score input {
+div.modal-content div.score input {
     margin-right: 8px;
     width: 19px;
     height: 19px;
 }
-div.modal_content div.score label {
+div.modal-content div.score label {
     font: normal normal 14px/21px Poppins;
 }
-div.modal_content div.score p {
+div.modal-content div.score p {
     font: normal normal 14px/21px Poppins;
     margin-bottom: 23px;
 }
-div.modal_content div.score p a, div.modal_content div.score label a {
+div.modal-content div.score p a, div.modal-content div.score label a {
     font: normal normal 14px/21px Poppins;
     color: #E1B9B5;
 }
-div.modal_content div.score p a {
+div.modal-content div.score p a {
         margin-left: 10px;
 }
-div.modal_content div.score tr, td {
+div.modal-content div.score tr, td {
     display: flex;
     align-items: flex-start;
 }
-div.modal_content div.score tr {
+div.modal-content div.score tr {
     margin-bottom: 14px;
 }
-div.modal_content div.score div.submit p {
+div.modal-content div.score div.submit p {
     margin-bottom: 0;
     font: normal normal 600 18px/27px Poppins;
     color: #543E3C;
 }
-div.modal_content div.score div.images img{
+div.modal-content div.score div.images img{
     position: absolute;
 }
-div.modal_content div.score div.images img:first-of-type {
+div.modal-content div.score div.images img:first-of-type {
     width: 77px;
     z-index: 2;
     right: 254px;
     top: 190px;
 }
-div.modal_content div.score div.images img:nth-of-type(2) {
+div.modal-content div.score div.images img:nth-of-type(2) {
     width: 124px;
     z-index: 3;
     right: 145px;
     top: 205px;
 }
-div.modal_content div.score div.images img:last-of-type {
+div.modal-content div.score div.images img:last-of-type {
     width: 206px;
     right: 50px;
     top: 262px;
     z-index: 4;
 }
-div.modal_content div.score div.images div.circle {
+div.modal-content div.score div.images div.circle {
     width: 257px;
     height: 257px;
     position: absolute;
@@ -487,10 +487,10 @@ div.modal_content div.score div.images div.circle {
     top: 120px;
 }
 /* CSS dla nakiety NPS */
-div.container_modal div.modal_content:nth-of-type(5) {
+div.container-modal div.modal-content:nth-of-type(5) {
     height: 610px;
 }
-div.survey_nps div.nps_header {
+div.survey-nps div.nps-header {
     width: 1008px;
     height: 116px;
     background: #DDC1BC 0% 0% no-repeat padding-box;
@@ -499,24 +499,24 @@ div.survey_nps div.nps_header {
     padding: 0 44px;
     margin-bottom: 88px;
 }
-div.survey_nps div.nps_header img {
+div.survey-nps div.nps-header img {
     width: 160px;
 }
-div.survey_nps div.nps_header h2 {
+div.survey-nps div.nps-header h2 {
     margin-left: 220px;
     font: normal normal 600 26px/36px Poppins;
     color: #543E3C;
     margin-bottom: 0;
 }
-div.survey_nps div.rest {
+div.survey-nps div.rest {
     text-align: center;
 }
-div.survey_nps div.rest h3 {
+div.survey-nps div.rest h3 {
     font: normal normal normal 28px/42px Poppins;
     margin-top: 31px;
     color: #070707;
 }
-div.survey_nps div.rest input {
+div.survey-nps div.rest input {
     padding: 17px 28px;
     border-radius: 51px;
     background: #E1B9B5 0% 0% no-repeat padding-box;
@@ -529,56 +529,56 @@ div.survey_nps div.rest input {
     box-shadow: 0px 3px 6px #00000029;
 }
 /* CSS dla ankiety NPS (ocena) */
-div.container_modal div.modal_content.sixth_nps {
+div.container-modal div.modal-content.sixth-nps {
     height: 736px;
 }
-div.survey_nps:last-of-type div.nps_header {
+div.survey-nps:last-of-type div.nps-header {
     margin-bottom: 38px;
 }
-div.survey_nps div.line_nps {
+div.survey-nps div.line-nps {
     display: flex;
     margin-bottom: 40px;
     align-items: center;
 }
-div.survey_nps div.line_nps p {
+div.survey-nps div.line-nps p {
     font: normal normal 14px/22px Poppins;
     color: #DDC1BC;
 }
-div.survey_nps div.line_nps div.line {
+div.survey-nps div.line-nps div.line {
     width: 847px;
     height: 16px;
     background-color: #DDC1BC;
     border-radius: 17px;
     margin: 0 15px;
 }
-div.survey_nps div.rest_line, div.survey_nps div.line_nps {
+div.survey-nps div.rest-line, div.survey-nps div.line-nps {
     padding-left: 41px;
 }
-div.survey_nps h3 {
+div.survey-nps h3 {
     font: normal normal normal 21px/36px Poppins;
     color: #070707;
     background-color: #F6F6F6;
     padding: 5px 0 8px 41px;
     margin-bottom: 23px;
 }
-div.survey_nps div.rest_line h4 {
+div.survey-nps div.rest-line h4 {
     font: normal normal 600 21px/32px Poppins;
     color: #070707;
     margin-bottom: 40px;
 }
-div.survey_nps div.rest_line p {
+div.survey-nps div.rest-line p {
     font: normal normal 300 12px/18px Poppins;
     color: #070707;
     margin-bottom: 13px;
 }
-div.survey_nps div.rest_line p span {
+div.survey-nps div.rest-line p span {
     margin-right: 6px;
 }
-div.survey_nps div.rest_line div.nps_boxes {
+div.survey-nps div.rest-line div.nps-boxes {
     display: flex;
     margin-bottom: 30px;
 }
-div.survey_nps div.rest_line div.nps_boxes div.nps_box {
+div.survey-nps div.rest-line div.nps-boxes div.nps-box {
     width: 54px;
     height: 54px;
     border: 2px solid #DDC1BC;
@@ -591,12 +591,12 @@ div.survey_nps div.rest_line div.nps_boxes div.nps_box {
     color: #543E3C;
     cursor: pointer;
 }
-div.survey_nps div.rest_line h5 {
+div.survey-nps div.rest-line h5 {
     font: normal normal 600 16px/25px Poppins;
     color: #070707;
     margin-bottom: 15px;
 }
-div.survey_nps div.rest_line input[type="text"] {
+div.survey-nps div.rest-line input[type="text"] {
     width: 967px;
     height: 70px;
     padding: 15px 0 35px 10px;
@@ -605,10 +605,10 @@ div.survey_nps div.rest_line input[type="text"] {
     font: normal normal normal 14px/21px Poppins;
     margin-bottom: 30px;
 }
-div.survey_nps div.rest_line input[type="text"]::placeholder {
+div.survey-nps div.rest-line input[type="text"]::placeholder {
     color: #D5D5D5;
 }
-div.survey_nps div.rest_line input[type="submit"] {
+div.survey-nps div.rest-line input[type="submit"] {
     padding: 18px 28px;
     border-radius: 40px;
     background: #E1B9B5 0% 0% no-repeat padding-box;
@@ -620,11 +620,11 @@ div.survey_nps div.rest_line input[type="submit"] {
     text-transform: uppercase;
     box-shadow: 0px 3px 6px #00000029;
 }
-div.survey_nps div.rest_line div.input_nps_submit {
+div.survey-nps div.rest-line div.input-nps-submit {
     display: flex;
     justify-content: flex-end;
 }
-.border_two {
+.border-two {
     border: 2px solid #EAEAEA;
 }
 .border {
@@ -633,15 +633,15 @@ div.survey_nps div.rest_line div.input_nps_submit {
 .alert {
     color: red;
 }
-div.first_question div.bottom {
+div.first-question div.bottom {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-div.first_question div.bottom div.button{
+div.first-question div.bottom div.button{
     width: 33%;
 }
-div.bottom div.last_question {
+div.bottom div.last-question {
     width: 33%;
 }
 .hidden {
