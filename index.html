@@ -6,7 +6,7 @@
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body> 
     <div class="container">
         <div class="first-page">
             <header class="padding">
@@ -126,24 +126,24 @@
                             <div class="answer">
                                 <img src="./media/flower-icon.svg" alt="Ikona kwiatka" class="image-answer">
                                 <p>A</p>
-                                <input type="button" value="2007" class="input-answer-one border-two">
+                                <input type="button" value="2007" class="input-answer-one basic-border inputs-color">
                             </div>
                             <div class="answer">
                                 <img src="./media/flower-icon.svg" alt="Ikona kwiatka" class="image-answer">
                                 <p>B</p>
-                                <input type="button" value="2008" class="input-answer-one border-two">
+                                <input type="button" value="2008" class="input-answer-one basic-border inputs-color">
                             </div>
                             <div class="answer">
                                 <img src="./media/flower-icon.svg" alt="Ikona kwiatka" class="image-answer">
                                 <p>C</p>
-                                <input type="button" value="2009" class="input-answer-one border-two">
+                                <input type="button" value="2009" class="input-answer-one basic-border inputs-color">
                             </div>
                         </div>
                         <div class="bottom">
                             <div class="last-question hidden"><img src="./media/back-icon.svg" alt=""> <p>POPRZEDNIE PYTANIE</p></div>
                         <p class="alert alert-one hidden">Prosimy o zaznaczenie odpowiedzi!</p>
                         <div class="button">
-                            <div class="submit submit-one"><p>NASTĘPNE PYTANIE</p> <img src="./media/next-icon.svg" alt=""></div>
+                            <button type="button" class="submit submit-one" onclick="button_click('one')"><p>NASTĘPNE PYTANIE</p> <img src="./media/next-icon.svg" alt=""></button>
                         </div></div>
                     </div>
             </div>
@@ -157,27 +157,27 @@
                             <div class="answer">
                                 <img src="./media/flower-icon.svg" alt="Ikona kwiatka" class="image-answer">
                                 <p>A</p>
-                                <input type="button" value="Jakość" class="input-answer-two border-two">
+                                <input type="button" value="Jakość" class="input-answer-two basic-border inputs-color">
                             </div>
                             <div class="answer">
                                 <div class="answer">
                                     <img src="./media/flower-icon.svg" alt="Ikona kwiatka" class="image-answer">
                                     <p>B</p>
-                                    <input type="button" value="Rozsądek" class="input-answer-two border-two">
+                                    <input type="button" value="Rozsądek" class="input-answer-two basic-border inputs-color">
                                 </div>
                             </div>
                             <div class="answer">
                                 <div class="answer">
                                     <img src="./media/flower-icon.svg" alt="Ikona kwiatka" class="image-answer">
                                     <p>C</p>
-                                    <input type="button" value="Komunikacja" class="input-answer-two border-two">
+                                    <input type="button" value="Komunikacja" class="input-answer-two basic-border inputs-color">
                                 </div>
                             </div>
                         </div>
                         <div class="button">
                             <div class="last-question"><img src="./media/back-icon.svg" alt=""> <p>POPRZEDNIE PYTANIE</p></div>
                             <p class="alert alert-two hidden">Prosimy o zaznaczenie odpowiedzi!</p>
-                            <div class="div"><div class="submit submit-two"><p>NASTĘPNE PYTANIE</p> <img src="./media/next-icon.svg" alt=""></div></div>
+                            <div class="end-button"><button type="button" class="submit submit-two" onclick="button_click('two')"><p>NASTĘPNE PYTANIE</p> <img src="./media/next-icon.svg" alt=""></button></div>
                         </div>
                     </div>
             </div>
@@ -191,27 +191,27 @@
                             <div class="answer">
                                 <img src="./media/flower-icon.svg" alt="Ikona kwiatka" class="image-answer">
                                 <p>A</p>
-                                <input type="button" value="Krakowie" class="input-answer-three border-two">
+                                <input type="button" value="Krakowie" class="input-answer-three basic-border inputs-color">
                             </div>
                             <div class="answer">
                                 <div class="answer">
                                     <img src="./media/flower-icon.svg" alt="Ikona kwiatka" class="image-answer">
                                     <p>B</p>
-                                    <input type="button" value="Szczecinie" class="input-answer-three border-two">
+                                    <input type="button" value="Szczecinie" class="input-answer-three basic-border inputs-color">
                                 </div>
                             </div>
                             <div class="answer">
                                 <div class="answer">
                                     <img src="./media/flower-icon.svg" alt="Ikona kwiatka" class="image-answer">
                                     <p>C</p>
-                                    <input type="button" value="Rzeszowie" class="input-answer-three border-two">
+                                    <input type="button" value="Rzeszowie" class="input-answer-three basic-border inputs-color">
                                 </div>
                             </div>
                         </div>
                         <div class="button">
                             <div class="last-question"><img src="./media/back-icon.svg" alt=""> <p>POPRZEDNIE PYTANIE</p></div>
                             <p class="alert alert-three hidden">Prosimy o zaznaczenie odpowiedzi!</p>
-                            <div class="div"><div class="submit submit-three"><p>ZAKOŃCZ QUIZ</p></div></div>
+                            <div class="end-button"><button type="button" class="submit submit-three" onclick="button_click('three')"><p>ZAKOŃCZ QUIZ</p></button></div>
                         </div>
                     </div>
             </div>  
@@ -230,19 +230,19 @@
                     <div class="checkbox">
                         <table>
                             <tr>
-                                <td><input type="checkbox" name="" id="all" class="check-all"></td>
+                                <td><input type="checkbox" name="rules" id="all" class="check-all"></td>
                                 <td><label for="all">Zaznacz wszystkie zgody</label></td>
                             </tr>
                             <tr>
-                                <td><input type="checkbox" name="" id="rules" required class="check"></td>
+                                <td><input type="checkbox" name="rules" id="rules" required class="check"></td>
                                 <td><label for="rules">* Akceptuję <a href="#">regulamin konkursu</a></label></td>
                             </tr>
                             <tr>
-                                <td><input type="checkbox" name="" id="data" class="check"></td>
+                                <td><input type="checkbox" name="rules" id="data" class="check"></td>
                                 <td><label for="data">Zgoda na przetwarzanie danych osobowych dla celów konkursu</label></td>
                             </tr>
                             <tr>
-                                <td><input type="checkbox" name="" id="data-two" required class="check"></td>
+                                <td><input type="checkbox" name="rules" id="data-two" required class="check"></td>
                                 <td><label for="data-two">* Wyrażam zgodę na przetwarzanie podanych przeze mnie moich danych osobowych w zakresie imię, nazwisko, adres e-mail, numer PWZ, numer telefonu przez Administratora w celu organizacji i realizacji Konkursu.</label></td>
                             </tr>
                         </table>
@@ -310,5 +310,30 @@
 
     </div>
     <script src="script.js"></script>
+    <script>
+        // function button_click(alert, input) {
+        //     let alert = document.querySelector(`alert-${alert}`);
+        //     let inputs = document.querySelectorAll(`.input-answer-${input}`);
+        //     console.log(alert, inputs);
+        //     inputs.forEach(input => {
+        //         if(input.classList.contains('border')) {
+        //             let temp = 0;
+        //             const modals = document.querySelectorAll('.modal-content');
+        //             for(let i = 0; i < modals.length; i++) {
+        //                 if(!modals[i].classList.contains('none') && temp === 0) {
+        //                     modals[i].classList.add('none')
+        //                     modals[i + 1].classList.remove('none')
+        //                     temp = 1;
+        //                 }
+        //             }
+        //         }
+        //     });
+        //     if(!inputs[0].classList.contains('border') && !inputs[1].classList.contains('border') && !inputs[2].classList.contains('border')) {
+        //         alert_text.classList.remove('hidden');
+        //     } else {
+        //         alert_text.classList.add('hidden');
+        // }
+        // }
+    </script>
 </body>
 </html>
