@@ -364,18 +364,10 @@ div.button button {
     font: normal normal 600 18px/27px Poppins;
     color: #543E3C;
 }
-div.button div.submit, div.button button {
-    padding: 18px 32px;
-    display: flex;
-    align-items: center;
-    background-color: #E1B9B5;
-    box-shadow: 0px 3px 6px #00000029;
-    border-radius: 40px;
-    border: none;
-    cursor: pointer;
-    
+div.button button img {
+    margin-left: 18px;
 }
-div.div {
+div.button div.end-button {
     display: flex;
     justify-content: flex-end;
     width: 33%;
@@ -400,6 +392,20 @@ div.button div.last-question p {
 }
 div.button div.last-question img {
     height: 13px;
+}
+div.button p.alert, div.bottom p.alert {
+    color: red;
+}
+div.first-question div.bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+div.first-question div.bottom div.button{
+    width: 33%;
+}
+div.bottom div.last-question {
+    width: 33%;
 }
 /* CSS dla wyniku ankiety */
 div.container-modal div.modal-content:nth-of-type(4) {
@@ -624,26 +630,16 @@ div.survey-nps div.rest-line div.input-nps-submit {
     display: flex;
     justify-content: flex-end;
 }
-.border-two {
+/* klasy JS */
+.basic-border {
     border: 2px solid #EAEAEA;
 }
-.border {
+.active-border {
     border: 3px solid #E1B9B5;
-}
-.alert {
-    color: red;
-}
-div.first-question div.bottom {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-div.first-question div.bottom div.button{
-    width: 33%;
-}
-div.bottom div.last-question {
-    width: 33%;
 }
 .hidden {
     visibility: hidden;
+}
+.border-answer-color {
+    color: #543E3C;
 }
