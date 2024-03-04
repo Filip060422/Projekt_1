@@ -115,7 +115,7 @@
         <div class="logo">
             <img src="./media/logo.svg" alt="Logo">
         </div>
-        <form action="" method="post">
+        <form action="" method="post" id="survey-form">
             <div class="modal-content ">
                 <div class="first-question">
                     <h2>Wiosna nadchodzi - konkurs Mediaflex</h2>
@@ -256,84 +256,15 @@
         </div>  
         </form>
         <!-- Ankieta NPS -->
-        <div class="modal-content none">
-            <div class="survey-nps">
-                <div class="nps-header">
-                    <img src="./media/logo.svg" alt="Logo">
-                    <h2>Ankieta NPS</h2>
-                </div>
-                <div class="rest">
-                    <img src="./media/thank-you-icon.svg" alt="">
-                    <h3>Zachęcamy do udziału w ankiecie</h3>
-                    <input type="button" value="WYPEŁNIJ ANKIETĘ">
-                </div>
-            </div>
-        </div>
-        <div class="modal-content sixth-nps none">
-            <form action="" method="post">
-                <div class="survey-nps">
-                    <div class="nps-header">
-                        <img src="./media/logo.svg" alt="Logo">
-                        <h2>Ankieta NPS</h2>
-                    </div>
-                    <div class="line-nps">
-                        <p>1/1</p>
-                        <div class="line"></div>
-                        <p>100%</p>
-                    </div>
-                    <h3>OCENA KURSU</h3>
-                    <div class="rest-line">
-                        <h4>Jak bardzo prawdopodobne jest, że polecisz konkurs innej osobie?</h4>
-                        <p><span>0 - mało prawdopodobne</span> <span>10- bardzo prawdopodobne</span></p>
-                        <div class="nps-boxes">
-                            <div class="nps-box">0</div>
-                            <div class="nps-box">1</div>
-                            <div class="nps-box">2</div>
-                            <div class="nps-box">3</div>
-                            <div class="nps-box">4</div>
-                            <div class="nps-box">5</div>
-                            <div class="nps-box">6</div>
-                            <div class="nps-box">7</div>
-                            <div class="nps-box">8</div>
-                            <div class="nps-box">9</div>
-                            <div class="nps-box">10</div>
-                        </div>
-                        <h5>Co możemy zrobić, aby poprawić jakość konkursu?</h5>
-                        <input type="text" name="" id="" placeholder="Opisz w jednym zdaniu" maxlength="967px">
-                        <div class="input-nps-submit">
-                            <input type="submit" value="WYŚLIJ">
-                        </div>
-                    </div>
-                </div>
-            </form>
-        </div>
 
+        <div class="modal-content survey-nps-conn none">
+            <mfx-questionnaire id="questionnaire"
+            props='{"name":"","surname":"","pharmaPassID":"","npwz":"","questionnaireId":""}'>
+            </mfx-questionnaire>
+            <script src="https://devcdnankiety.mediaflex.com.pl/client-tag/client.js"></script>
+            <script src="quest_survey.js"></script>
+        </div>
     </div>
     <script src="script.js"></script>
-    <script>
-        // function button_click(alert, input) {
-        //     let alert = document.querySelector(`alert-${alert}`);
-        //     let inputs = document.querySelectorAll(`.input-answer-${input}`);
-        //     console.log(alert, inputs);
-        //     inputs.forEach(input => {
-        //         if(input.classList.contains('border')) {
-        //             let temp = 0;
-        //             const modals = document.querySelectorAll('.modal-content');
-        //             for(let i = 0; i < modals.length; i++) {
-        //                 if(!modals[i].classList.contains('none') && temp === 0) {
-        //                     modals[i].classList.add('none')
-        //                     modals[i + 1].classList.remove('none')
-        //                     temp = 1;
-        //                 }
-        //             }
-        //         }
-        //     });
-        //     if(!inputs[0].classList.contains('border') && !inputs[1].classList.contains('border') && !inputs[2].classList.contains('border')) {
-        //         alert_text.classList.remove('hidden');
-        //     } else {
-        //         alert_text.classList.add('hidden');
-        // }
-        // }
-    </script>
 </body>
 </html>

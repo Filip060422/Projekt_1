@@ -31,7 +31,7 @@ function button_click(number) {
 
         points = (number === 'one' && inputs[2].classList.contains('active-border')) ? 1 : (number === 'one'? 0 : points);
         points = (number === 'two' && inputs[1].classList.contains('active-border')) ? (points >= 1 ? 2 : 1) : (number === 'two' ? (points >= 1 ? 1 : 0) : points);
-        points = (number === 'three' && inputs[0].classList.contains('active-border')) ? (points >= 2 ? 3 : points == 1 ? 2 : 1) : (number === 'three' ? (points >= 1 ? 1 : 0) : points);
+        points = (number === 'three' && inputs[0].classList.contains('active-border')) ? (points >= 2 ? 3 : points == 1 ? 2 : 1) : (number === 'three' ? (points >= 2 ? 2 : points >= 1 ? 1 : 0) : points);
     }
     document.querySelector('.final-result').innerText = `${points}/3`;
 }
@@ -86,4 +86,18 @@ check_all.addEventListener('click', () => {
             check.checked = false;
         }
     });
-})
+});
+
+
+
+document.getElementById("survey-form").addEventListener("submit", function(event) {
+    event.preventDefault();
+            let temp = 0;
+            for(let i = 0; i < modals.length; i++) {
+                if(!modals[i].classList.contains('none') && temp === 0) {
+                    modals[i].classList.add('none')
+                    modals[i + 1].classList.remove('none')
+                    temp = 1;
+                }
+            }
+});
