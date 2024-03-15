@@ -34,6 +34,7 @@ function button_click(number) {
         points = (number === 'three' && inputs[0].classList.contains('active-border')) ? (points >= 2 ? 3 : points == 1 ? 2 : 1) : (number === 'three' ? (points >= 2 ? 2 : points >= 1 ? 1 : 0) : points);
     }
     document.querySelector('.final-result').innerText = `${points}/3`;
+    document.querySelector('.final-result-input').value = points;
 }
 
 survey_buttons.forEach(button => {
