@@ -29,7 +29,6 @@
     header a:first-of-type {
         margin-right: 0; 
     }
-
     /* CSS do pierwszej sekcji, banera */
     section.banner {
         display: flex;
