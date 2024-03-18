@@ -1,0 +1,196 @@
+/* media */
+@media screen and (max-width: 430px) {
+    body {
+        max-width: 430px;
+        margin: 0;
+    }
+    .padding {
+        padding-left: 13px;
+        padding-right: 13px;
+    }
+    div.first-page {
+        max-width: 430px;
+        height: 850px;
+    }
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 90px;
+    }
+    header img {
+        width: 150px;
+        margin: auto;
+    }
+    header a {
+        font: normal normal 10px Poppins;
+        display: none;
+    }
+    header a:first-of-type {
+        margin-right: 0; 
+    }
+
+    /* CSS do pierwszej sekcji, banera */
+    section.banner {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-top: 73px;
+    }
+    section div.left {
+        display: flex;
+        flex-direction: column;
+    }
+    section div.left h2 {
+        font-size: 25px;
+        width: 350px;
+    }
+    section div.left div.line {
+        width: 100px;
+        margin: 15px 0;
+    }
+    section div.left p {
+        font: normal normal normal 14px/32px Poppins;
+        width: 350px;
+        margin-bottom: 25px;
+    }
+    section .button-banner {
+        display: flex;
+        justify-content: center;
+    }
+    section div.left input, div.second-page input, div.third-page input{
+        width: 120px;
+        padding: 10px 15px;
+        font: normal normal 600 13px Poppins;
+    }
+    section div.right img {
+        width: 300px;
+    }
+    div.mouse {
+        margin: auto;
+        margin-top: 50px;
+        width: 60px;
+        height: 60px;
+    }
+
+    div.second-page {
+        display: flex;
+        flex-direction: column;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 50px;
+        height: auto;
+        max-width: 430px;
+    }
+    div.second-page h2 {
+        font-size: 25px;
+        margin: 50px 0;
+    }
+    div.second-page div.cards {
+        display: flex; 
+        flex-direction: column;
+        justify-content: center;
+        max-width: 410px;
+    }
+    div.cards div.card:first-of-type, div.cards div.card:nth-of-type(2) {
+        margin-right: 0;
+    }
+    div.cards div.card {
+        width: 340px;
+        height: 350px;
+        margin-bottom: 10px;
+        margin-right: 0;
+    }
+    div.second-page input, div.third-page input {
+        margin: auto;
+        margin-top: 25px;
+        display: flex;
+    }
+    div.second-page p a{
+        margin-top: 20px;
+    }
+    div.second-page a {
+        margin-bottom: 50px;
+    }
+    /* CSS dla kart */
+    div.cards div.image img {
+        max-height: 150px;
+        max-width: 180px;
+    }
+    div.card div.circle {
+        width: 100px;
+        height: 100px;
+    }
+    div.cards div.text {
+        padding: 15px 20px;
+    }
+    div.cards div.text h3 {
+        font: normal normal bold 18px Poppins;
+        margin-bottom: 10px;
+    }
+    div.cards div.text p {
+        font: normal normal normal 13px Poppins;
+    }
+    div.cards div.text-two {
+        padding-top: 24px;
+    }
+    
+    /* CSS do trzeciej sekcji */
+    div.third-page {
+        height: 900px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    div.third-page h2 {
+        margin-bottom: 25px;
+        font: normal normal bold 25px Poppins;
+    }
+    div.third-page div.boxes {
+        flex-direction: column;
+        align-items: center;
+    }
+    div.boxes div.box {
+        width: 300px;
+        height: 210px;
+        margin-bottom: 10px;
+        margin-right: 25px;
+    }
+    div.boxes div.box::before {
+        border-top: 105px solid transparent;
+        border-left: 40px solid #FBF9F5;
+        border-bottom: 105px solid transparent;
+    }
+    div.boxes div.box::after {
+        border-top: 105px solid transparent;
+        border-left: 40px solid #D6C092;
+        border-bottom: 105px solid transparent;
+    }
+    div.box div.image {
+        margin-left: 50px;
+        margin-top: 44px;
+    }
+    div.box div.image img {
+        height: 43px;
+    }
+    div.box div.image h3 {
+        font: normal normal 20px Poppins;
+        margin-left: 44px;
+    }
+    div.box div.circle {
+        width: 72px;
+        height: 72px;
+    }
+    div.box div.text h3 {
+        font: normal normal bold 18px Poppins;
+    }
+    /* CSS dla stopki */
+    footer {
+        height: 100px;
+    }
+    footer h4 {
+        font: normal normal normal 13px Poppins;
+    }
+}
