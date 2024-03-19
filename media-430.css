@@ -71,7 +71,7 @@
         width: 60px;
         height: 60px;
     }
-
+    /* CSS do drugiej sekcji */
     div.second-page {
         display: flex;
         flex-direction: column;
@@ -191,5 +191,136 @@
     }
     footer h4 {
         font: normal normal normal 13px Poppins;
+    }
+
+    /* Modal */
+    div.container-modal {
+        height: 100vh;
+        max-width: 430px;
+        padding-top: 20px;
+    }
+    div.container-modal div.logo {
+        display: flex;
+        justify-content: center;
+        margin: 25px 0 50px 0;
+    }
+    div.container-modal div.logo img {
+        width: 150px;
+    }
+    div.container-modal div.modal-content {
+        max-width: 404px;
+        height: 560px;
+        position: relative;
+        top: 0;
+        left: 0;
+        padding: 30px 30px 30px 30px;
+    }
+    div.modal-content h2 {
+        color: #2D635A;
+        font: normal normal normal 25px Abril Fatface;
+        margin-bottom: 13px;
+    }
+    div.modal-content h3 {
+        color: #E1B9B5;
+        font: normal normal 600 18px Poppins;
+        margin-bottom: 19px;
+    }
+    div.modal-content h4 {
+        font: normal normal 16px Poppins;
+        margin-bottom: 48px;
+    }
+    div.answers div.answer {
+        margin-bottom: 20px;
+        height: 50px;
+    }
+    div.answers div.answer:last-of-type {
+        margin-bottom: 10px;
+    }
+    div.answer img {
+        height: 50px;
+    }
+    div.answer p {
+        font: normal normal bold 18px Roboto;
+        margin: 0 28px 0 17px;
+    }
+    div.answer input {
+        height: 50px;
+        font: 16px Poppins;
+        width: 287px;
+    }
+
+    div.modal-content div.alert-div {
+        display: block;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 14px;
+        color: red;
+    }
+    div.modal-content div.button {
+        align-items: center;
+    }
+    div.button button {
+        padding: 12px 24px;
+        font: normal normal 600 12px Poppins;
+        border-radius: 30px;
+    }
+    div.button button img {
+        margin-left: 18px;
+        height: 10px;
+    }
+    div.button div.end-button {
+        width: 33%;
+    }
+    div.modal-content div.submit p {
+        font: normal normal 600 12px Poppins;
+    }
+    div.button div.last-question p {
+        font: normal normal 12px Roboto;
+    }
+    div.button div.last-question img {
+        height: 10px;
+    }
+    /* CSS dla wyniku ankiety */
+    div.container-modal div.modal-content:nth-of-type(4) {
+        height: 100%;
+    }
+    div.modal-content div.score h3 {
+        font: normal normal normal 20px Poppins;
+        margin-bottom: 10px;
+    }
+    div.modal-content div.score h4 {
+        padding: 15px;
+        font: normal normal 28px Poppins;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    div.modal-content div.score h5 {
+        font: normal normal 14px Poppins;
+        margin-bottom: 10px;
+    }
+    div.modal-content div.score label {
+        font: normal normal 12px Poppins;
+    }
+    div.modal-content div.score p {
+        font: normal normal 12px Poppins;
+        margin-bottom: 10px;
+    }
+    div.modal-content div.score p a, div.modal-content div.score label a {
+        font: normal normal 12px Poppins;
+    }
+    div.modal-content div.score tr {
+        margin-bottom: 10px;
+    }
+    div.modal-content div.score div.submit p {
+        font: normal normal 600 12px Poppins;
+    }
+    div.modal-content div.score div.images {
+        display: none;
+    }
+    /* CSS dla nakiety NPS */
+    div.container-modal div.modal-content.survey-nps-conn {
+        height: 100%;
     }
 }

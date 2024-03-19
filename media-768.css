@@ -1,0 +1,326 @@
+@media screen and (min-width: 431px) and (max-width: 768px) {
+    body {
+        max-width: 768px;
+        margin: 0;
+    }
+    .padding {
+        padding-left: 13px;
+        padding-right: 13px;
+    }
+    div.first-page {
+        max-width: 768px;
+        height: 924px;
+    }
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 100px;
+    }
+    header img {
+        width: 200px;
+        margin: auto;
+    }
+    header a {
+        font: normal normal 10px Poppins;
+        display: none;
+    }
+    header a:first-of-type {
+        margin-right: 0; 
+    }
+    /* CSS do pierwszej sekcji, banera */
+    section.banner {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-top: 73px;
+    }
+    section div.left {
+        display: flex;
+        flex-direction: column;
+    }
+    section div.left h2 {
+        font-size: 30px;
+        width: 500px;
+    }
+    section div.left div.line {
+        width: 200px;
+        margin: 15px 0;
+    }
+    section div.left p {
+        font: normal normal normal 16px/32px Poppins;
+        width: 500px;
+        margin-bottom: 25px;
+    }
+    section .button-banner {
+        display: flex;
+        justify-content: center;
+    }
+    section div.left input, div.second-page input, div.third-page input{
+        width: 170px;
+        padding: 15px 25px;
+        font: normal normal 600 16px Poppins;
+    }
+    section div.right img {
+        width: 350px;
+    }
+    div.mouse {
+        margin: auto;
+        margin-top: 65px;
+        width: 60px;
+        height: 60px;
+    }
+    /* CSS do drugiej sekcji */
+    div.second-page {
+        display: flex;
+        flex-direction: column;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 50px;
+        height: auto;
+        max-width: 768px;
+    }
+    div.second-page h2 {
+        font-size: 30px;
+        margin: 50px 0;
+    }
+    div.second-page div.cards {
+        display: flex; 
+        flex-direction: column;
+        justify-content: center;
+        max-width: 500px;
+    }
+    div.cards div.card:first-of-type, div.cards div.card:nth-of-type(2) {
+        margin-right: 0;
+    }
+    div.cards div.card {
+        width: 400px;
+        height: 400px;
+        margin-bottom: 10px;
+        margin-right: 0;
+    }
+    div.second-page input, div.third-page input {
+        margin: auto;
+        margin-top: 25px;
+        display: flex;
+    }
+    div.second-page p a{
+        margin-top: 20px;
+    }
+    div.second-page a {
+        margin-bottom: 50px;
+    }
+    /* CSS dla kart */
+    div.cards div.image img {
+        max-height: 200px;
+        max-width: 250px;
+    }
+    div.card div.circle {
+        width: 150px;
+        height: 150px;
+        left: 120px;
+    }
+    div.cards div.text {
+        padding: 15px 20px;
+    }
+    div.cards div.text h3 {
+        font: normal normal bold 24px Poppins;
+        margin-bottom: 10px;
+    }
+    div.cards div.text p {
+        font: normal normal normal 16px Poppins;
+    }
+    div.cards div.text-two {
+        padding-top: 24px;
+    }
+    
+    /* CSS do trzeciej sekcji */
+    div.third-page {
+        height: 900px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    div.third-page h2 {
+        margin-bottom: 25px;
+        font: normal normal bold 25px Poppins;
+    }
+    div.third-page div.boxes {
+        flex-direction: column;
+        align-items: center;
+    }
+    div.boxes div.box {
+        width: 300px;
+        height: 210px;
+        margin-bottom: 10px;
+        margin-right: 25px;
+    }
+    div.boxes div.box::before {
+        border-top: 105px solid transparent;
+        border-left: 40px solid #FBF9F5;
+        border-bottom: 105px solid transparent;
+    }
+    div.boxes div.box::after {
+        border-top: 105px solid transparent;
+        border-left: 40px solid #D6C092;
+        border-bottom: 105px solid transparent;
+    }
+    div.box div.image {
+        margin-left: 50px;
+        margin-top: 44px;
+    }
+    div.box div.image img {
+        height: 43px;
+    }
+    div.box div.image h3 {
+        font: normal normal 20px Poppins;
+        margin-left: 44px;
+    }
+    div.box div.circle {
+        width: 72px;
+        height: 72px;
+    }
+    div.box div.text h3 {
+        font: normal normal bold 18px Poppins;
+    }
+    /* CSS dla stopki */
+    footer {
+        height: 100px;
+    }
+    footer h4 {
+        font: normal normal normal 13px Poppins;
+    }
+
+    /* Modal */
+    div.container-modal {
+        height: 100vh;
+        max-width: 768px;
+        padding-top: 20px;
+    }
+    div.container-modal div.logo {
+        display: flex;
+        justify-content: center;
+        margin: 25px 0 50px 0;
+    }
+    div.container-modal div.logo img {
+        width: 150px;
+    }
+    div.container-modal div.modal-content {
+        max-width: 404px;
+        height: 560px;
+        position: relative;
+        top: 0;
+        left: 0;
+        padding: 30px 30px 30px 30px;
+    }
+    div.modal-content h2 {
+        color: #2D635A;
+        font: normal normal normal 25px Abril Fatface;
+        margin-bottom: 13px;
+    }
+    div.modal-content h3 {
+        color: #E1B9B5;
+        font: normal normal 600 18px Poppins;
+        margin-bottom: 19px;
+    }
+    div.modal-content h4 {
+        font: normal normal 16px Poppins;
+        margin-bottom: 48px;
+    }
+    div.answers div.answer {
+        margin-bottom: 20px;
+        height: 50px;
+    }
+    div.answers div.answer:last-of-type {
+        margin-bottom: 10px;
+    }
+    div.answer img {
+        height: 50px;
+    }
+    div.answer p {
+        font: normal normal bold 18px Roboto;
+        margin: 0 28px 0 17px;
+    }
+    div.answer input {
+        height: 50px;
+        font: 16px Poppins;
+        width: 287px;
+    }
+
+    div.modal-content div.alert-div {
+        display: block;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 14px;
+        color: red;
+    }
+    div.modal-content div.button {
+        align-items: center;
+    }
+    div.button button {
+        padding: 12px 24px;
+        font: normal normal 600 12px Poppins;
+        border-radius: 30px;
+    }
+    div.button button img {
+        margin-left: 18px;
+        height: 10px;
+    }
+    div.button div.end-button {
+        width: 33%;
+    }
+    div.modal-content div.submit p {
+        font: normal normal 600 12px Poppins;
+    }
+    div.button div.last-question p {
+        font: normal normal 12px Roboto;
+    }
+    div.button div.last-question img {
+        height: 10px;
+    }
+    /* CSS dla wyniku ankiety */
+    div.container-modal div.modal-content:nth-of-type(4) {
+        height: 100%;
+    }
+    div.modal-content div.score h3 {
+        font: normal normal normal 20px Poppins;
+        margin-bottom: 10px;
+    }
+    div.modal-content div.score h4 {
+        padding: 15px;
+        font: normal normal 28px Poppins;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    div.modal-content div.score h5 {
+        font: normal normal 14px Poppins;
+        margin-bottom: 10px;
+    }
+    div.modal-content div.score label {
+        font: normal normal 12px Poppins;
+    }
+    div.modal-content div.score p {
+        font: normal normal 12px Poppins;
+        margin-bottom: 10px;
+    }
+    div.modal-content div.score p a, div.modal-content div.score label a {
+        font: normal normal 12px Poppins;
+    }
+    div.modal-content div.score tr {
+        margin-bottom: 10px;
+    }
+    div.modal-content div.score div.submit p {
+        font: normal normal 600 12px Poppins;
+    }
+    div.modal-content div.score div.images {
+        display: none;
+    }
+    /* CSS dla nakiety NPS */
+    div.container-modal div.modal-content.survey-nps-conn {
+        height: 100%;
+    }
+}
