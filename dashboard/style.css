@@ -274,6 +274,7 @@ table.sub-table td {
 }
 table.sub-table th:first-of-type, table.sub-table th:nth-of-type(2), table.sub-table td:first-of-type, table.sub-table td:nth-of-type(2), table.sub-table th:nth-of-type(3), table.sub-table td:nth-of-type(3) {
     text-align: right;
+    vertical-align: top;
 }
 table.sub-table th:last-of-type {
     text-align: left;
