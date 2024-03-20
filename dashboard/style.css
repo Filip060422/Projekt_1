@@ -116,11 +116,33 @@ section.main-area div.input p {
     margin-bottom: 0;
     font: normal normal 500 14px/21px Poppins;
 }
-section.main-area div.input input {
+div.input div.input-button {
     width: 225px;
     height: 54px;
     border: 2px solid #EDF0F2;
     border-radius: 4px;
+    display: flex;
+    position: relative;
+}
+section.main-area div.input input {
+    border: none;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    padding-right: 20%;
+}
+section.main-area div.input input:focus {
+    outline: none;
+}
+section.main-area div.input button {
+    background: transparent url('./media/search-icon.svg') 0% 0% no-repeat padding-box;
+    background-position: center;
+    height: 100%;
+    width: 20%;
+    border: none;
+    background-color: none;
+    position: absolute;
+    right: 0;
 }
 section.main-area table {
     width: 100%;
@@ -155,6 +177,10 @@ tr.main-table td {
 }
 .minus {
     background: transparent url('./media/minus-icon.svg') 0% 0% no-repeat padding-box;
+    border: none;
+    background-color: #FFFFFF;
+    width: 24px;
+    height: 24px;
 }
 tr.main-table th:nth-of-type(3), tr.main-table th:last-of-type {
     text-align: left;
@@ -238,13 +264,18 @@ table.sub-table {
 }
 table.sub-table th {
     font: normal normal 500 13px Poppins;
+    padding: 18px 14px 0 14px;
+    min-width: 100px;
 }
 table.sub-table td {
     font: normal normal normal 13px Poppins;
+    padding: 0 14px 18px 14px;
+    min-width: 80px;
 }
 table.sub-table th:first-of-type, table.sub-table th:nth-of-type(2), table.sub-table td:first-of-type, table.sub-table td:nth-of-type(2), table.sub-table th:nth-of-type(3), table.sub-table td:nth-of-type(3) {
     text-align: right;
 }
 table.sub-table th:last-of-type {
     text-align: left;
+    vertical-align: top;
 }
