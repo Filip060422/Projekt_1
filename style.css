@@ -323,6 +323,7 @@ div.answers div.answer {
     display: flex;
     height: 75px;
     align-items: center;
+    width: 100%;
 }
 div.answer img {
     position: absolute;
@@ -336,7 +337,7 @@ div.answer p {
     margin: 0 56px 0 26px;
 }
 div.answer input {
-    width: 300px;
+    width: 100%;
     height: 60px;
     background-color: #FFFFFF;
     border-radius: 10px;
@@ -512,4 +513,7 @@ div.container-modal div.modal-content.survey-nps-conn {
 }
 .border-answer-color {
     color: #543E3C;
+}
+div.modal-content div.alert-div {
+    display: none;
 }
