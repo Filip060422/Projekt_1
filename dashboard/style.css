@@ -94,11 +94,13 @@ section.main-area div.buttons {
     border-bottom: 1px solid #A1A1A1;
     margin-bottom: 30px;
 }
+.button-margin {
+    border-bottom: 2px solid #543E3C !important;
+}
 div.buttons button:first-of-type {
     font: normal normal 500 18px/27px Poppins;
     color: #543E3C;
     border: none;
-    border-bottom: 2px solid #543E3C;
     margin-bottom: -1px;
     background-color: #FFFFFF;
 }
@@ -109,6 +111,7 @@ div.buttons button:last-of-type {
     margin-bottom: -1px;
     background-color: #FFFFFF;
 }
+
 section.main-area div.input {
     margin-bottom: 30px;
 }
