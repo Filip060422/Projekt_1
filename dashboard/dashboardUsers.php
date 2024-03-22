@@ -364,48 +364,45 @@ function pages() {
             </div>
         </section>
         <section class="main-area users">
-        <form action="dashboard.php" method="post" id="myForm">
-            <div class="buttons">
-                <button type="button" class="button-users button-margin">Lista uczestników</button>
-                <button type="button" class="button-winners">Lista zwycięzców</button>
-            </div>
-            <div class="users-container">
-                <div class="input">
-                    <p>Wyszukaj użytkownika</p>
-                    
-                        <div class="input-button">
-                            <input type="text" name="search">
-                            <button type="submit"></button>
-                        </div>
-                    <!-- </form> -->
+                <div class="buttons">
+                    <form action="dashboardWinners.php" method="post">
+                        <button type="button" class="button-users button-margin">Lista uczestników</button>
+                        <button type="submit" class="button-winners">Lista zwycięzców</button>
+                    </form>
                 </div>
-                <table>
-                    <tr class="main-table">
-                        <th></th>
-                        <th>LP</th>
-                        <th>Imię i nazwisko</th>
-                        <th>Data wzięcia<br>udziału w konkursie</th>
-                        <th>Ilość uzyskanych<br>punktów</th>
-                        <th>Zajęte<br>miejsce</th>
-                        <th>Wygrana</th>
-                        <th>Sposób dostarczenia<br>nagrody</th>
-                    </tr>
-                    <?php echo displayData(); ?>
-                </table>
-                <div class="bottom-main-area">
-                    <div class="left">
-                        <p>Pozycje od <span><?php echo itemsTwo(); ?></span> do <span><?php echo items(); ?></span> z <span><?php echo pages(); ?></span> łącznie</p>
+            <form action="dashboardUsers.php" method="post" id="myForm">
+                <div class="users-container">
+                    <div class="input">
+                        <p>Wyszukaj użytkownika</p>
+                            <div class="input-button">
+                                <input type="text" name="search">
+                                <button type="submit"></button>
+                            </div>
+                    </div>
+                    <table>
+                        <tr class="main-table">
+                            <th></th>
+                            <th>LP</th>
+                            <th>Imię i nazwisko</th>
+                            <th>Data wzięcia<br>udziału w konkursie</th>
+                            <th>Ilość uzyskanych<br>punktów</th>
+                            <th>Zajęte<br>miejsce</th>
+                            <th>Wygrana</th>
+                            <th>Sposób dostarczenia<br>nagrody</th>
+                        </tr>
+                        <?php echo displayData(); ?>
+                    </table>
+                    <div class="bottom-main-area">
+                        <div class="left">
+                            <p>Pozycje od <span><?php echo itemsTwo(); ?></span> do <span><?php echo items(); ?></span> z <span><?php echo pages(); ?></span> łącznie</p>
                             <label for="positions">Pokaż</label>
-                            <!-- <form action="dashboard.php" method="post" id="myForm"> -->
-                                <select id="positions" name="positions" onchange="submitForm()">
+                                <select id="positions2" name="positions" onchange="submitForm()">
                                 <option value="5" <?php if(isset($_POST['positions']) && $_POST['positions'] == "5") echo "selected"; ?>>5</option>
                                 <option value="10" <?php if(isset($_POST['positions']) && $_POST['positions'] == "10") echo "selected"; ?>>10</option>
                                 <option value="15" <?php if(isset($_POST['positions']) && $_POST['positions'] == "15") echo "selected"; ?>>15</option>
                                 </select>
-                            <!-- </form> -->
                             <label for="positions">pozycji</label>
-                    </div>
-                    <!-- <form action="dashboard.php" method="post"> -->
+                        </div>
                         <div class="right">
                             <button type="submit" name="previous">Poprzednia</button>
                             <button class="page" type="submit" name="page" value="1">1</button>
@@ -415,58 +412,11 @@ function pages() {
                             <button type="submit" name="page" value="5">5</button>
                             <button type="submit" name="next">Następna</button>
                         </div>
-                </div>
-            </div>
-            <div class="winners-container none">
-                <div class="input">
-                    <p>Wyszukaj użytkownika</p>
-                    
-                        <div class="input-button">
-                            <input type="text" name="search">
-                            <button type="submit"></button>
-                        </div>
-                    <!-- </form> -->
-                </div>
-                <table>
-                    <tr class="main-table">
-                        <th></th>
-                        <th>LP</th>
-                        <th>Imię i nazwisko</th>
-                        <th>Data wzięcia<br>udziału w konkursie</th>
-                        <th>Ilość uzyskanych<br>punktów</th>
-                        <th>Zajęte<br>miejsce</th>
-                        <th>Wygrana</th>
-                        <th>Sposób dostarczenia<br>nagrody</th>
-                    </tr>
-                    <?php echo displayData(); ?>
-                </table>
-                <div class="bottom-main-area">
-                    <div class="left">
-                        <p>Pozycje od <span><?php echo itemsTwo(); ?></span> do <span><?php echo items(); ?></span> z <span><?php echo pages(); ?></span> łącznie</p>
-                            <label for="positions">Pokaż</label>
-                            <!-- <form action="dashboard.php" method="post" id="myForm"> -->
-                                <select id="positions" name="positions" onchange="submitForm()">
-                                <option value="5" <?php if(isset($_POST['positions']) && $_POST['positions'] == "5") echo "selected"; ?>>5</option>
-                                <option value="10" <?php if(isset($_POST['positions']) && $_POST['positions'] == "10") echo "selected"; ?>>10</option>
-                                <option value="15" <?php if(isset($_POST['positions']) && $_POST['positions'] == "15") echo "selected"; ?>>15</option>
-                                </select>
-                            <!-- </form> -->
-                            <label for="positions">pozycji</label>
                     </div>
-                    <!-- <form action="dashboard.php" method="post"> -->
-                        <div class="right">
-                            <button type="submit" name="previous">Poprzednia</button>
-                            <button class="page" type="submit" name="page" value="1">1</button>
-                            <button type="submit" name="page" value="2">2</button>
-                            <button type="submit" name="page" value="3">3</button>
-                            <button type="submit" name="page" value="4">4</button>
-                            <button type="submit" name="page" value="5">5</button>
-                            <button type="submit" name="next">Następna</button>
-                        </div>
                 </div>
-            </div>
-        </form>    
+            </form>    
         </section>
+
     </div>
     <script src="./script.js"></script>
 </body>

@@ -1,6 +1,6 @@
-@media screen and (min-width: 431px) and (max-width: 768px) {
+@media screen and (min-width: 431px) and (max-width: 884px) {
     body {
-        max-width: 768px;
+        max-width: 884px;
         margin: 0;
     }
     .padding {
@@ -8,7 +8,7 @@
         padding-right: 13px;
     }
     div.first-page {
-        max-width: 768px;
+        max-width: 884px;
         height: 924px;
     }
     header {
@@ -78,7 +78,7 @@
         align-items: center;
         margin-top: 50px;
         height: auto;
-        max-width: 768px;
+        max-width: 884px;
     }
     div.second-page h2 {
         font-size: 30px;
@@ -136,7 +136,7 @@
     
     /* CSS do trzeciej sekcji */
     div.third-page {
-        height: 900px;
+        height: auto;
         padding-top: 50px;
         padding-bottom: 50px;
         display: flex;
@@ -144,60 +144,64 @@
         align-items: center;
     }
     div.third-page h2 {
-        margin-bottom: 25px;
-        font: normal normal bold 25px Poppins;
+        margin: 50px 0;
+        font: normal normal bold 30px Poppins;
+        text-wrap: wrap;
     }
     div.third-page div.boxes {
         flex-direction: column;
         align-items: center;
     }
     div.boxes div.box {
-        width: 300px;
-        height: 210px;
+        width: 400px;
+        height: 260px;
         margin-bottom: 10px;
         margin-right: 25px;
     }
     div.boxes div.box::before {
-        border-top: 105px solid transparent;
+        border-top: 130px solid transparent;
         border-left: 40px solid #FBF9F5;
-        border-bottom: 105px solid transparent;
+        border-bottom: 130px solid transparent;
     }
     div.boxes div.box::after {
-        border-top: 105px solid transparent;
+        border-top: 130px solid transparent;
         border-left: 40px solid #D6C092;
-        border-bottom: 105px solid transparent;
+        border-bottom: 130px solid transparent;
     }
     div.box div.image {
         margin-left: 50px;
         margin-top: 44px;
     }
     div.box div.image img {
-        height: 43px;
+        height: 55px;
     }
     div.box div.image h3 {
-        font: normal normal 20px Poppins;
+        font: normal normal 25px Poppins;
         margin-left: 44px;
     }
     div.box div.circle {
-        width: 72px;
-        height: 72px;
+        width: 84px;
+        height: 84px;
     }
     div.box div.text h3 {
-        font: normal normal bold 18px Poppins;
+        font: normal normal bold 22px Poppins;
     }
     /* CSS dla stopki */
     footer {
         height: 100px;
     }
     footer h4 {
-        font: normal normal normal 13px Poppins;
+        font: normal normal normal 15px Poppins;
     }
 
     /* Modal */
     div.container-modal {
         height: 100vh;
-        max-width: 768px;
+        max-width: 884px;
         padding-top: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
     div.container-modal div.logo {
         display: flex;
@@ -208,8 +212,8 @@
         width: 150px;
     }
     div.container-modal div.modal-content {
-        max-width: 404px;
-        height: 560px;
+        max-width: 430px;
+        height: auto;
         position: relative;
         top: 0;
         left: 0;
@@ -217,104 +221,108 @@
     }
     div.modal-content h2 {
         color: #2D635A;
-        font: normal normal normal 25px Abril Fatface;
+        font: normal normal normal 27px Abril Fatface;
         margin-bottom: 13px;
     }
     div.modal-content h3 {
         color: #E1B9B5;
-        font: normal normal 600 18px Poppins;
+        font: normal normal 600 20px Poppins;
         margin-bottom: 19px;
     }
     div.modal-content h4 {
-        font: normal normal 16px Poppins;
+        font: normal normal 18px Poppins;
         margin-bottom: 48px;
     }
     div.answers div.answer {
         margin-bottom: 20px;
-        height: 50px;
+        height: 60px;
     }
     div.answers div.answer:last-of-type {
         margin-bottom: 10px;
     }
     div.answer img {
-        height: 50px;
+        height: 60px;
     }
     div.answer p {
         font: normal normal bold 18px Roboto;
-        margin: 0 28px 0 17px;
+        margin: 0 28px 0 22px;
     }
     div.answer input {
-        height: 50px;
+        height: 60px;
         font: 16px Poppins;
         width: 287px;
+        margin-left: 10px;
     }
 
     div.modal-content div.alert-div {
         display: block;
-        height: 40px;
+        height: 50px;
         display: flex;
         justify-content: center;
         align-items: center;
-        font-size: 14px;
+        font-size: 16px;
         color: red;
+    }
+    div.button p.alert, div.bottom p.alert {
+        display: none;
     }
     div.modal-content div.button {
         align-items: center;
     }
     div.button button {
-        padding: 12px 24px;
-        font: normal normal 600 12px Poppins;
-        border-radius: 30px;
+        padding: 17px 29px;
+        font: normal normal 600 14px Poppins;
+        border-radius: 35px;
     }
     div.button button img {
         margin-left: 18px;
-        height: 10px;
+        height: 15px;
     }
     div.button div.end-button {
         width: 33%;
     }
     div.modal-content div.submit p {
-        font: normal normal 600 12px Poppins;
+        font: normal normal 600 14px Poppins;
     }
     div.button div.last-question p {
-        font: normal normal 12px Roboto;
+        font: normal normal 14px Roboto;
     }
     div.button div.last-question img {
-        height: 10px;
+        height: 15px;
     }
     /* CSS dla wyniku ankiety */
     div.container-modal div.modal-content:nth-of-type(4) {
         height: 100%;
     }
     div.modal-content div.score h3 {
-        font: normal normal normal 20px Poppins;
+        font: normal normal normal 22px Poppins;
         margin-bottom: 10px;
     }
     div.modal-content div.score h4 {
         padding: 15px;
-        font: normal normal 28px Poppins;
+        font: normal normal 30px Poppins;
         width: 100%;
         margin-bottom: 10px;
     }
     div.modal-content div.score h5 {
-        font: normal normal 14px Poppins;
+        font: normal normal 15px Poppins;
         margin-bottom: 10px;
     }
     div.modal-content div.score label {
-        font: normal normal 12px Poppins;
+        font: normal normal 13px Poppins;
     }
     div.modal-content div.score p {
-        font: normal normal 12px Poppins;
+        font: normal normal 13px Poppins;
         margin-bottom: 10px;
     }
     div.modal-content div.score p a, div.modal-content div.score label a {
-        font: normal normal 12px Poppins;
+        font: normal normal 13px Poppins;
     }
     div.modal-content div.score tr {
         margin-bottom: 10px;
     }
     div.modal-content div.score div.submit p {
-        font: normal normal 600 12px Poppins;
+        font: normal normal 600 13px Poppins;
     }
     div.modal-content div.score div.images {
         display: none;

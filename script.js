@@ -10,6 +10,7 @@ let points = 0;
 
 function button_click(number) {
     const alerts = document.querySelector(`.alert-${number}`);
+    const alerts2 = document.querySelector(`.second-alert-${number}`);
     const inputs = document.querySelectorAll(`.input-answer-${number}`);
     inputs.forEach(input => {
         if(input.classList.contains('active-border')) {
@@ -26,8 +27,10 @@ function button_click(number) {
     
     if(!inputs[0].classList.contains('active-border') && !inputs[1].classList.contains('active-border') && !inputs[2].classList.contains('active-border')) {
         alerts.classList.remove('hidden');
+        alerts2.classList.remove('hidden');
     } else {
         alerts.classList.add('hidden');
+        alerts2.classList.add('hidden');
 
         points = (number === 'one' && inputs[2].classList.contains('active-border')) ? 1 : (number === 'one'? 0 : points);
         points = (number === 'two' && inputs[1].classList.contains('active-border')) ? (points >= 1 ? 2 : 1) : (number === 'two' ? (points >= 1 ? 1 : 0) : points);

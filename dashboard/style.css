@@ -96,10 +96,12 @@ section.main-area div.buttons {
 }
 .button-margin {
     border-bottom: 2px solid #543E3C !important;
+    color: #543E3C !important;
+    font-weight: 500 !important;
 }
 div.buttons button:first-of-type {
-    font: normal normal 500 18px/27px Poppins;
-    color: #543E3C;
+    font: normal normal 400 18px/27px Poppins;
+    color: #A1A1A1;
     border: none;
     margin-bottom: -1px;
     background-color: #FFFFFF;

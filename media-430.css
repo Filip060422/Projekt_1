@@ -198,6 +198,9 @@
         height: 100vh;
         max-width: 430px;
         padding-top: 20px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
     }
     div.container-modal div.logo {
         display: flex;
@@ -208,8 +211,8 @@
         width: 150px;
     }
     div.container-modal div.modal-content {
-        max-width: 404px;
-        height: 560px;
+        max-width: 360px;
+        height: auto;
         position: relative;
         top: 0;
         left: 0;
@@ -257,6 +260,9 @@
         align-items: center;
         font-size: 14px;
         color: red;
+    }
+    div.button p.alert, div.bottom p.alert {
+        display: none;
     }
     div.modal-content div.button {
         align-items: center;
